@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "Header.scss",
+        "../../SassGlobals/_variables.scss"
+    ],
+    "names": [],
+    "file": "Header.css"
+}

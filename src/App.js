@@ -1,17 +1,16 @@
-import React from 'react';
-import './App.css';
-import Header from './components/Header/Header'
-import SideNav from './components/SideNav/SideNav'
-import SliderParent from './components/SliderComponents/SliderParent'
+import React from "react";
+import "./App.css";
+import SideNav from "./Components/SideNav/SideNav";
+import routes from "./routes";
+import { withRouter } from "react-router-dom";
 
-function App() {
+function App() {  
   return (
     <div className="App">
-      <Header />
-      <SideNav />
-      <SliderParent />
+        <SideNav />
+        {routes}
     </div>
   );
 }
 
-export default App;
+export default withRouter(App);
