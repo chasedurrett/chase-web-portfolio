@@ -1,0 +1,52 @@
+@import "../../SassGlobals/variables.scss";
+
+.home-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: $darkMetal;
+  display: flex;
+  align-items: center;
+  position: relative;
+  .home-titles-container {
+    width: 480px;
+    z-index: 2;
+    position: absolute;
+    margin-bottom: 230px;
+    margin-left: 100px;
+    .line-wrap {
+      overflow: hidden;
+      .line {
+        height: 35px;
+        text-align: left;
+        .home-title-1 {
+          color: $whiteish;
+          font-family: $roboto;
+          font-size: 70px;
+          font-weight: 500;
+          padding: 2px;
+          margin: 2px auto;
+          .chase {
+            transition: all 600ms;
+            &:hover {
+              color: $blu;
+            }
+          }
+        }
+        .home-title-2 {
+          color: $whiteish;
+          font-family: $roboto;
+          font-size: 20px;
+          margin-left: 7px;
+          font-weight: 400;
+          .i-am-a {
+            color: $blu;
+            font-size: 18px;
+            margin-right: 8px;
+            font-weight: 700;
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+}

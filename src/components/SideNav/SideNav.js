@@ -1,6 +1,6 @@
 import React from "react";
 import "./SideNav.css";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 import HomeOutlinedIcon from "@material-ui/icons/HomeOutlined";
 import AccountTreeOutlinedIcon from "@material-ui/icons/AccountTreeOutlined";
 import TuneOutlinedIcon from "@material-ui/icons/TuneOutlined";
@@ -17,7 +17,7 @@ const SideNav = () => {
     <div className="side-nav-container">
       <div className="side-nav-logo-container"></div>
       <nav className="side-nav-links">
-        <Link to='/'  className={classes.root}>
+        <Link to="/" className={classes.root}>
           <LightTooltip
             TransitionComponent={Zoom}
             className={classes.toolTip}
@@ -27,7 +27,7 @@ const SideNav = () => {
             <HomeOutlinedIcon className={classes.root}></HomeOutlinedIcon>
           </LightTooltip>
         </Link>
-        <Link to='/projects' className={classes.root}>
+        <Link to="/projects" className={classes.root}>
           <LightTooltip
             TransitionComponent={Zoom}
             className={classes.toolTip}
@@ -49,7 +49,7 @@ const SideNav = () => {
             <TuneOutlinedIcon className={classes.root}></TuneOutlinedIcon>
           </LightTooltip>
         </Link>
-        <Link  className={classes.root}>
+        <Link className={classes.root}>
           <LightTooltip
             TransitionComponent={Zoom}
             className={classes.toolTip}
@@ -59,7 +59,7 @@ const SideNav = () => {
             <InfoOutlinedIcon className={classes.root}></InfoOutlinedIcon>
           </LightTooltip>
         </Link>
-        <Link  className={classes.root}>
+        <Link className={classes.root}>
           <LightTooltip
             TransitionComponent={Zoom}
             className={classes.toolTip}
@@ -85,9 +85,11 @@ const useStyles = makeStyles((theme) => ({
       margin: theme.spacing(2),
       color: "white",
       height: 45,
+      transition: "all 400ms",
       "&:hover": {
         color: "#00adb5",
         cursor: "pointer",
+        transform: "rotate(0.05turn)",
       },
       "&:focus": {
         color: "#00adb5",
