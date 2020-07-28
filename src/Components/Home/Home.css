@@ -4,7 +4,7 @@
 .home-container {
   width: 100vw;
   height: 100vh;
-  background-color: #08182e;
+  background-color: #161e29;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -265,11 +265,20 @@
   }
 }
 
-.home-container .circles-ripple-container {
-  height: 400px;
-  width: 400px;
+.home-container .home-social-icons {
+  height: 60px;
+  width: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
-  top: 200;
-  right: 100;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  top: 0;
+  right: 0;
 }
 /*# sourceMappingURL=Home.css.map */

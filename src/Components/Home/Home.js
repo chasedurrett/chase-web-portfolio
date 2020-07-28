@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 import { motion } from "framer-motion";
 import Button from "@material-ui/core/Button";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
-import GitHubOutlinedIcon from "@material-ui/icons/GitHub";
+import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 
 const Home = () => {
@@ -14,7 +14,12 @@ const Home = () => {
   let button1 = useRef(null);
   let markup1 = useRef(null);
   let markup2 = useRef(null);
+  let githubIcon = useRef(null);
+  let linkedInIcon = useRef(null);
+  let resumeButton = useRef(null);
   const classes = useStyles();
+
+  const adjectivesList = ['curious, passionate, meticulous, always learning']
 
   useEffect(() => {
     gsap.from([title1, title2], 1.2, {
@@ -38,15 +43,29 @@ const Home = () => {
       opacity: 0,
       delay: 2,
     });
-  }, [title1, title2, line2, button1, markup1, markup2]);
+    gsap.from([githubIcon, linkedInIcon, resumeButton], 0.3, {
+      opacity: 0,
+      y: -50,
+      delay: 2,
+      stagger: {
+        amount: 0.2,
+      },
+    });
+  }, [
+    title1,
+    title2,
+    line2,
+    button1,
+    markup1,
+    markup2,
+    githubIcon,
+    linkedInIcon,
+    resumeButton,
+  ]);
 
   return (
     <div className="home-container">
-      <div
-        ref={(e) => (markup1 = e)}
-        className="sue"
-        style={{ marginLeft: 10 }}
-      >
+      <div ref={(e) => (markup1 = e)} className="sue" style={{ marginLeft: 8 }}>
         &#60;
       </div>
       <div
@@ -106,8 +125,19 @@ const Home = () => {
       <div ref={(e) => (markup2 = e)} className="sue2">
         &#47;&#62;
       </div>
-      <GitHubOutlinedIcon className={classes.gitHub} />
-      <LinkedInIcon className={classes.linked} />
+      <div className="home-social-icons">
+        <GitHubIcon ref={(e) => (githubIcon = e)} className={classes.gitHub} />
+        <LinkedInIcon
+          ref={(e) => (linkedInIcon = e)}
+          className={classes.linked}
+        />
+        <Button
+          ref={(e) => (resumeButton = e)}
+          className={classes.buttonResume}
+        >
+          Resume
+        </Button>
+      </div>
     </div>
   );
 };
@@ -147,10 +177,25 @@ const useStyles = makeStyles((theme) => ({
       color: "#232931",
     },
   },
+  buttonResume: {
+    background: "none",
+    border: "1px solid #4ecca3",
+    width: 100,
+    height: 30,
+    color: "#eeeeee",
+    fontFamily: "Recursive, sans-serif",
+    fontSize: 13,
+    "&:hover": {
+      cursor: "pointer",
+      background: "#4ecca3",
+      boxShadow: "inset 3px 3px 2px #393e4628",
+      color: "#232931",
+    },
+  },
   gitHub: {
     color: "#eeeeee",
-    height: 60,
-    width: 60,
+    height: 25,
+    width: 25,
     "&:hover": {
       color: "#4ecca3",
       cursor: "pointer",
@@ -158,8 +203,8 @@ const useStyles = makeStyles((theme) => ({
   },
   linked: {
     color: "#eeeeee",
-    height: 70,
-    width: 70,
+    height: 32,
+    width: 32,
     "&:hover": {
       color: "#4ecca3",
       cursor: "pointer",

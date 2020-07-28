@@ -142,11 +142,14 @@
       opacity: 1;
     }
   }
-  .circles-ripple-container {
-    height: 400px;
-    width: 400px;
+  .home-social-icons {
+    height: 60px;
+    width: 270px;
+    display: flex;
     position: absolute;
-    top: 200;
-    right: 100;
+    align-items: center;
+    justify-content: space-evenly;
+    top: 0;
+    right: 0;
   }
 }
