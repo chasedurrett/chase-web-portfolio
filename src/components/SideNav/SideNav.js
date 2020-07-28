@@ -15,7 +15,7 @@ const SideNav = () => {
 
   return (
     <div className="side-nav-container">
-      <div className="side-nav-logo-container"></div>
+      {/* <div className="side-nav-logo-container"></div> */}
       <nav className="side-nav-links">
         <Link to="/" className={classes.root}>
           <LightTooltip
@@ -87,14 +87,14 @@ const useStyles = makeStyles((theme) => ({
       height: 45,
       transition: "all 400ms",
       "&:hover": {
-        color: "#00adb5",
+        color: "#4ecca3",
         cursor: "pointer",
       },
       "&:focus": {
-        color: "#00adb5",
+        color: "#4ecca3",
       },
       "&:target": {
-        color: "#00adb5",
+        color: "#4ecca3",
       },
     },
   },

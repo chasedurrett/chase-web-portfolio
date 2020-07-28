@@ -4,11 +4,12 @@ import SideNav from "./Components/SideNav/SideNav";
 import routes from "./routes";
 import { withRouter } from "react-router-dom";
 
-function App() {  
+
+function App() {
   return (
     <div className="App">
-        <SideNav />
-        {routes}
+      <SideNav />
+      {routes}
     </div>
   );
 }

@@ -4,16 +4,22 @@ import { gsap } from "gsap";
 import { motion } from "framer-motion";
 import Button from "@material-ui/core/Button";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
+import GitHubOutlinedIcon from "@material-ui/icons/GitHub";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
 
 const Home = () => {
   let title1 = useRef(null);
   let title2 = useRef(null);
   let line2 = useRef(null);
+  let button1 = useRef(null);
+  let markup1 = useRef(null);
+  let markup2 = useRef(null);
   const classes = useStyles();
 
   useEffect(() => {
     gsap.from([title1, title2], 1.2, {
-      delay: 1,
+      delay: 0.3,
+      opacity: 0,
       ease: "power3.out",
       y: 64,
       stagger: {
@@ -28,52 +34,80 @@ const Home = () => {
         amount: 0.5,
       },
     });
-  }, [title1, title2, line2]);
+    gsap.from([button1, markup1, markup2], 2, {
+      opacity: 0,
+      delay: 2,
+    });
+  }, [title1, title2, line2, button1, markup1, markup2]);
 
   return (
     <div className="home-container">
       <div
-        className="home-titles-container"
-        style={{ position: "absolute", left: 180, top: 350 }}
+        ref={(e) => (markup1 = e)}
+        className="sue"
+        style={{ marginLeft: 10 }}
       >
-        <div className="line-wrap">
-          <div
-            className="line"
-            style={{ height: 70 }}
-            ref={(e) => (title1 = e)}
-          >
-            <h1 className="home-title-1">
-              <span className="chase">Chase Durrett</span>
-            </h1>
-          </div>
-        </div>
-        <div className="line-wrap">
-          <div className="line">
-            <h2 className="home-title-2" ref={(e) => (title2 = e)}>
-              Web Developer // Front & Back End Engineer
-            </h2>
-          </div>
-        </div>
+        &#60;
       </div>
-      <svg
-        ref={(e) => (line2 = e)}
-        style={{ position: "absolute", top: 490, left: 244 }}
-        width="425"
-        height="2"
-        viewBox="0 0 399 2"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
+      <div
+        className="hero-container"
+        style={{
+          position: "absolute",
+          height: 300,
+          width: 600,
+          left: 100,
+        }}
       >
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M0 1.5V0.5H699V1.5H0Z"
-          fill="#4ECCA3"
-        />
-      </svg>
-      <Button className={classes.button} variant="contained">
-        Contact
-      </Button>
+        <div className="home-titles-container" style={{ position: "absolute" }}>
+          <div className="line-wrap">
+            <div
+              className="line"
+              style={{ height: 70 }}
+              ref={(e) => (title1 = e)}
+            >
+              <h1 className="home-title-1">
+                <span className="chase">Chase Durrett.</span>
+              </h1>
+            </div>
+          </div>
+          <div className="line-wrap">
+            <div className="line">
+              <h2 className="home-title-2" ref={(e) => (title2 = e)}>
+                Web Developer // Front & Back End Engineer
+              </h2>
+            </div>
+          </div>
+        </div>
+        <svg
+          ref={(e) => (line2 = e)}
+          style={{ position: "absolute", top: 135, left: -20 }}
+          width="455"
+          height="2"
+          viewBox="0 0 399 2"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M0 1.5V0.5H699V1.5H0Z"
+            fill="#4ECCA3"
+          />
+        </svg>
+        <Button
+          ref={(e) => (button1 = e)}
+          style={{ position: "absolute", top: 160, left: 10 }}
+          className={classes.button}
+          variant="contained"
+        >
+          Contact
+        </Button>
+      </div>
+      <div ref={(e) => (markup2 = e)} className="sue2">
+        &#47;&#62;
+      </div>
+      <GitHubOutlinedIcon className={classes.gitHub} />
+      <LinkedInIcon className={classes.linked} />
     </div>
   );
 };
@@ -100,8 +134,35 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   button: {
-    background: 'none',
-    border: '1px solid #4ecca3',
-    color: '#eeeeee'
+    background: "none",
+    border: "1px solid #4ecca3",
+    width: 200,
+    color: "#eeeeee",
+    fontFamily: "Recursive, sans-serif",
+    fontSize: 18,
+    "&:hover": {
+      cursor: "pointer",
+      background: "#4ecca3",
+      boxShadow: "inset 3px 3px 2px #393e4628",
+      color: "#232931",
+    },
+  },
+  gitHub: {
+    color: "#eeeeee",
+    height: 60,
+    width: 60,
+    "&:hover": {
+      color: "#4ecca3",
+      cursor: "pointer",
+    },
+  },
+  linked: {
+    color: "#eeeeee",
+    height: 70,
+    width: 70,
+    "&:hover": {
+      color: "#4ecca3",
+      cursor: "pointer",
+    },
   },
 }));

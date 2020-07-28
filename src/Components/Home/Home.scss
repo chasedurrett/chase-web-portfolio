@@ -5,9 +5,28 @@
   height: 100vh;
   background-color: $darkMetal;
   display: flex;
+  justify-content: center;
   align-items: center;
   overflow: hidden;
   position: relative;
+  .sue {
+    color: $greyish;
+    font-size: 70px;
+    font-family: $sue;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .sue2 {
+    color: $greyish;
+    font-size: 60px;
+    font-family: $sue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 14px;
+  }
   .home-titles-container {
     width: 560px;
     z-index: 2;
@@ -15,11 +34,11 @@
     .line-wrap {
       overflow: hidden;
       .line {
-        height: 35px;
-        text-align: center;
+        height: 45px;
+        text-align: left;
         .home-title-1 {
           color: $whiteish;
-          font-family: $recursive;
+          font-family: $roboto;
           font-size: 70px;
           font-weight: 500;
           padding: 2px;
@@ -33,18 +52,12 @@
         }
         .home-title-2 {
           color: $whiteish;
-          font-family: $recursive;
+          font-family: $roboto;
+          color: #eeeeee80;
           font-size: 20px;
           margin-left: 7px;
           margin-top: 20px;
           font-weight: 400;
-          .i-am-a {
-            color: $blu;
-            font-size: 18px;
-            margin-right: 8px;
-            font-weight: 700;
-            opacity: 0.8;
-          }
         }
       }
     }
@@ -56,14 +69,14 @@
   }
   @keyframes part1 {
     0% {
-        transform: translateY(0%);
-      }
-      50% {
-        transform: translateY(-2%);
-      }
-      100%{
-          transform: translateY(0%);
-      }
+      transform: translateY(0%);
+    }
+    50% {
+      transform: translateY(-2%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
   }
   .part3 {
     animation: part3 4s ease infinite;
@@ -72,14 +85,14 @@
   }
   @keyframes part3 {
     0% {
-        transform: translateY(0%);
-      }
-      50% {
-        transform: translateY(-6%);
-      }
-      100%{
-          transform: translateY(0%);
-      }
+      transform: translateY(0%);
+    }
+    50% {
+      transform: translateY(-6%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
   }
   .part2 {
     animation: part2 20s ease infinite;
@@ -93,8 +106,8 @@
     50% {
       transform: rotate(10deg);
     }
-    100%{
-        transform: rotate(0deg);
+    100% {
+      transform: rotate(0deg);
     }
   }
   .part4 {
@@ -109,8 +122,8 @@
     50% {
       transform: rotate(10deg);
     }
-    100%{
-        transform: rotate(0deg);
+    100% {
+      transform: rotate(0deg);
     }
   }
   .part5 {
@@ -123,10 +136,17 @@
       opacity: 1;
     }
     50% {
-      opacity: .01;
+      opacity: 0.01;
     }
-    100%{
-        opacity: 1;
+    100% {
+      opacity: 1;
     }
+  }
+  .circles-ripple-container {
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 200;
+    right: 100;
   }
 }
