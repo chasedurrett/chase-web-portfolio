@@ -89,7 +89,6 @@ const useStyles = makeStyles((theme) => ({
       "&:hover": {
         color: "#00adb5",
         cursor: "pointer",
-        transform: "rotate(0.05turn)",
       },
       "&:focus": {
         color: "#00adb5",

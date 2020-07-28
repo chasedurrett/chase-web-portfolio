@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "ACAA,OAAO,CAAC,qJAAI",
+    "mappings": "ACAA,OAAO,CAAC,qJAAI;AACZ,OAAO,CAAC,uGAAI",
     "sources": [
         "Header.scss",
         "../../SassGlobals/_variables.scss"

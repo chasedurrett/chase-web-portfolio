@@ -6,21 +6,20 @@
   background-color: $darkMetal;
   display: flex;
   align-items: center;
+  overflow: hidden;
   position: relative;
   .home-titles-container {
-    width: 480px;
+    width: 560px;
     z-index: 2;
     position: absolute;
-    margin-bottom: 230px;
-    margin-left: 100px;
     .line-wrap {
       overflow: hidden;
       .line {
         height: 35px;
-        text-align: left;
+        text-align: center;
         .home-title-1 {
           color: $whiteish;
-          font-family: $roboto;
+          font-family: $recursive;
           font-size: 70px;
           font-weight: 500;
           padding: 2px;
@@ -34,9 +33,10 @@
         }
         .home-title-2 {
           color: $whiteish;
-          font-family: $roboto;
+          font-family: $recursive;
           font-size: 20px;
           margin-left: 7px;
+          margin-top: 20px;
           font-weight: 400;
           .i-am-a {
             color: $blu;
@@ -47,6 +47,86 @@
           }
         }
       }
+    }
+  }
+  .part1 {
+    animation: part1 1s ease;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  @keyframes part1 {
+    0% {
+        transform: translateY(0%);
+      }
+      50% {
+        transform: translateY(-2%);
+      }
+      100%{
+          transform: translateY(0%);
+      }
+  }
+  .part3 {
+    animation: part3 4s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  @keyframes part3 {
+    0% {
+        transform: translateY(0%);
+      }
+      50% {
+        transform: translateY(-6%);
+      }
+      100%{
+          transform: translateY(0%);
+      }
+  }
+  .part2 {
+    animation: part2 20s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  @keyframes part2 {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+  }
+  .part4 {
+    animation: part4 20s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  @keyframes part4 {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+  }
+  .part5 {
+    animation: part5 7s ease infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  @keyframes part5 {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: .01;
+    }
+    100%{
+        opacity: 1;
     }
   }
 }
