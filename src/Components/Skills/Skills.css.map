@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "ACAA,OAAO,CAAC,qJAAI;AACZ,OAAO,CAAC,uGAAI;AACZ,OAAO,CAAC,gFAAI;ADAZ,AAAA,iBAAiB,CAAC;EAChB,KAAK,EAAE,IAAI;EACX,WAAW,EAAE,GAAG;EAChB,MAAM,EAAE,KAAK;EACb,gBAAgB,ECFN,OAAO;EDGjB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,QAAQ,EAAE,MAAM;EAChB,QAAQ,EAAE,QAAQ;CACnB",
     "sources": [
-        "Skills.scss"
+        "Skills.scss",
+        "../../SassGlobals/_variables.scss"
     ],
     "names": [],
     "file": "Skills.css"

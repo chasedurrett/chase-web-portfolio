@@ -1,16 +1,16 @@
 import React, { useRef, useEffect } from "react";
 import "./Home.css";
 import { gsap } from "gsap";
-import { motion } from "framer-motion";
 import Button from "@material-ui/core/Button";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import Typewriter from "typewriter-effect";
 
 const Home = () => {
   let title1 = useRef(null);
   let title2 = useRef(null);
-  let line2 = useRef(null);
+  let title3 = useRef(null);
   let button1 = useRef(null);
   let markup1 = useRef(null);
   let markup2 = useRef(null);
@@ -19,62 +19,63 @@ const Home = () => {
   let resumeButton = useRef(null);
   const classes = useStyles();
 
-  const adjectivesList = ['curious, passionate, meticulous, always learning']
+  const adjectivesList = ["curious, passionate, meticulous, always learning"];
 
   useEffect(() => {
-    gsap.from([title1, title2], 1.2, {
+    gsap.from([title1, title2, title3], 1.9, {
       delay: 0.3,
       opacity: 0,
       ease: "power3.out",
-      y: 64,
+      // y: 64,
       stagger: {
-        amount: 0.45,
+        amount: 0.85,
       },
     });
-    gsap.from(line2, 2, {
-      delay: 1,
-      ease: "power3.out",
-      x: -850,
-      stagger: {
-        amount: 0.5,
-      },
-    });
-    gsap.from([button1, markup1, markup2], 2, {
-      opacity: 0,
-      delay: 2,
-    });
+    // gsap.from(line2, 2, {
+    //   delay: 1,
+    //   ease: "power3.out",
+    //   x: -850,
+    //   stagger: {
+    //     amount: 0.5,
+    //   },
+    // });
+    // gsap.from([markup1, markup2], 2, {
+    //   opacity: 0,
+    //   delay: 1,
+    // });
     gsap.from([githubIcon, linkedInIcon, resumeButton], 0.3, {
       opacity: 0,
       y: -50,
-      delay: 2,
+      delay: 1.5,
       stagger: {
-        amount: 0.2,
+        amount: 0.4,
       },
     });
   }, [
     title1,
     title2,
-    line2,
-    button1,
-    markup1,
-    markup2,
+    title3,
+    // button1,
+    // markup1,
+    // markup2,
     githubIcon,
     linkedInIcon,
     resumeButton,
   ]);
 
   return (
-    <div className="home-container">
-      <div ref={(e) => (markup1 = e)} className="sue" style={{ marginLeft: 8 }}>
+    <div id="home" className="home-container">
+      {/* <div ref={(e) => (markup1 = e)} className="sue" style={{ marginLeft: 8 }}>
         &#60;
-      </div>
+      </div> */}
       <div
         className="hero-container"
         style={{
           position: "absolute",
-          height: 300,
-          width: 600,
-          left: 100,
+          height: 500,
+          width: 800,
+          left: 140,
+          top: 160,
         }}
       >
         <div className="home-titles-container" style={{ position: "absolute" }}>
@@ -89,18 +90,27 @@ const Home = () => {
               </h1>
             </div>
           </div>
-          <div className="line-wrap">
+          <div className="line-wrap" styles={{ marginTop: 20 }}>
             <div className="line">
               <h2 className="home-title-2" ref={(e) => (title2 = e)}>
-                Web Developer // Front & Back End Engineer
+                Hi, I am a full stack web developer who builds clean and
+                effective websites and applications.
+              </h2>
+            </div>
+          </div>
+          <div className="line-wrap" styles={{ marginTop: 90 }}>
+            <div className="line">
+              <h2 className="home-title-3" ref={(e) => (title3 = e)}>
+                View my <span>projects</span> or <span>get in touch.</span>
               </h2>
             </div>
           </div>
         </div>
-        <svg
+      </div>
+      {/* <svg
           ref={(e) => (line2 = e)}
-          style={{ position: "absolute", top: 135, left: -20 }}
-          width="455"
+          style={{ position: "absolute", top: 155, left: 12 }}
+          width="380"
           height="2"
           viewBox="0 0 399 2"
           fill="none"
@@ -112,19 +122,28 @@ const Home = () => {
             d="M0 1.5V0.5H699V1.5H0Z"
             fill="#4ECCA3"
           />
-        </svg>
-        <Button
-          ref={(e) => (button1 = e)}
-          style={{ position: "absolute", top: 160, left: 10 }}
-          className={classes.button}
-          variant="contained"
-        >
-          Contact
-        </Button>
-      </div>
-      <div ref={(e) => (markup2 = e)} className="sue2">
+        </svg> */}
+      {/* </div>
+   <div ref={(e) => (markup2 = e)} className="sue2">
         &#47;&#62;
-      </div>
+      </div> */}
+      {/* <div className="typewriter-container">
+        <h3 className="typewriter-h3">
+          <Typewriter
+            options={{
+              strings: [
+                "curious",
+                "passionate",
+                "meticulous",
+                "always learning",
+              ],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+          about development
+        </h3>
+      </div> */}
       <div className="home-social-icons">
         <GitHubIcon ref={(e) => (githubIcon = e)} className={classes.gitHub} />
         <LinkedInIcon
@@ -137,6 +156,13 @@ const Home = () => {
         >
           Resume
         </Button>
+        {/* <Button
+          ref={(e) => (button1 = e)}
+          className={classes.buttonResume}
+          variant="contained"
+        >
+          Contact
+        </Button> */}
       </div>
     </div>
   );

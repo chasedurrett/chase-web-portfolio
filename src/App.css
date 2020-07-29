@@ -1,7 +1,9 @@
 .App {
   text-align: center;
   height: 100vh;
-  width: 100vw;
   display: flex;
-  background-color: #0f1d31;
+  background-color: #232931;
+  display: flex;
+  flex-wrap: wrap;
+  /* overflow-x: hidden; */
 }

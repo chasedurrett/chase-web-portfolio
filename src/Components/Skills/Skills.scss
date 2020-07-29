@@ -1,0 +1,13 @@
+@import "../../SassGlobals/variables.scss";
+
+.skills-container {
+  width: 96vw;
+  margin-left: 4vw;
+  height: 100vh;
+  background-color: $darkMetal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}

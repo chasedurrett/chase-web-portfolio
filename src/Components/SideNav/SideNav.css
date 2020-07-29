@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap");
 .side-nav-container {
-  background-color: #242c38;
+  background-color: #393e46;
   height: 100%;
-  width: 75px;
+  width: 4vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,6 +15,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: fixed;
+  z-index: 3;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

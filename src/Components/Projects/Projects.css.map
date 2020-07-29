@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "ACAA,OAAO,CAAC,qJAAI;AACZ,OAAO,CAAC,uGAAI;AACZ,OAAO,CAAC,gFAAI;ADAZ,AAAA,mBAAmB,CAAC;EAClB,KAAK,EAAE,IAAI;EACX,WAAW,EAAE,GAAG;EAChB,MAAM,EAAE,KAAK;EACb,gBAAgB,ECFN,OAAO;EDGjB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,QAAQ,EAAE,MAAM;EAChB,QAAQ,EAAE,QAAQ;CACnB",
     "sources": [
-        "Projects.scss"
+        "Projects.scss",
+        "../../SassGlobals/_variables.scss"
     ],
     "names": [],
     "file": "Projects.css"

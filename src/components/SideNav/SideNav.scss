@@ -3,10 +3,13 @@
 .side-nav-container {
   background-color: $lightMetal;
   height: 100%;
-  width: 75px;
+  width: 4vw;
+  // min-width: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: fixed;
+  z-index: 3;
   justify-content: center;
   .side-nav-links {
     display: flex;
