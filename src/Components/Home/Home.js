@@ -43,7 +43,7 @@ const Home = () => {
     //   opacity: 0,
     //   delay: 1,
     // });
-    gsap.from([githubIcon, linkedInIcon, resumeButton], 0.3, {
+    gsap.from([resumeButton, githubIcon, linkedInIcon], 0.3, {
       opacity: 0,
       y: -50,
       delay: 1.5,
@@ -145,24 +145,17 @@ const Home = () => {
         </h3>
       </div> */}
       <div className="home-social-icons">
-        <GitHubIcon ref={(e) => (githubIcon = e)} className={classes.gitHub} />
-        <LinkedInIcon
-          ref={(e) => (linkedInIcon = e)}
-          className={classes.linked}
-        />
-        <Button
+      <Button
           ref={(e) => (resumeButton = e)}
           className={classes.buttonResume}
         >
           Resume
         </Button>
-        {/* <Button
-          ref={(e) => (button1 = e)}
-          className={classes.buttonResume}
-          variant="contained"
-        >
-          Contact
-        </Button> */}
+        <GitHubIcon ref={(e) => (githubIcon = e)} className={classes.gitHub} />
+        <LinkedInIcon
+          ref={(e) => (linkedInIcon = e)}
+          className={classes.linked}
+        />
       </div>
     </div>
   );
