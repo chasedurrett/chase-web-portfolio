@@ -3,11 +3,126 @@
 .projects-container {
   width: 96vw;
   margin-left: 4vw;
-  height: 100vh;
+  // height: 100vh;
   background-color: $darkMetal;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+
   position: relative;
+
+  .projects-body {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    .projects-body-title-container {
+      width: 100%;
+      text-align: left;
+      height: 115px;
+      h2 {
+        color: $greyish;
+        font-family: $recursive;
+      }
+    }
+    .project-body-one {
+      width: 100%;
+      height: 400px;
+      display: flex;
+      justify-content: space-evenly;
+      .project-body-one-info,
+      .project-body-image-container {
+        height: 100%;
+        width: 50%;
+      }
+      .project-body-one-info {
+        font-family: $roboto;
+        color: $whiteish;
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+        .project-body-one-title {
+          width: 100%;
+          height: 20%;
+          font-size: 40px;
+          color: $blu;
+        }
+        .project-body-one-about {
+          width: 90%;
+          height: 30%;
+        }
+        .project-body-one-tech {
+          word-spacing: 20px;
+          color: $greyish;
+          font-family: $recursive;
+          height: 15%;
+        }
+        .project-body-one-links {
+          word-spacing: 20px;
+          color: $greyish;
+          font-family: $recursive;
+        }
+      }
+    }
+    .project-body-two {
+      width: 100%;
+      height: 400px;
+      display: flex;
+      justify-content: space-evenly;
+      .project-body-two-info,
+      .project-body-image-container {
+        height: 100%;
+        width: 50%;
+      }
+      .project-body-two-info {
+        font-family: $roboto;
+        color: $whiteish;
+        display: flex;
+        text-align: right;
+        align-items: flex-end;
+        flex-direction: column;
+        .project-body-two-title {
+          width: 100%;
+          height: 20%;
+          font-size: 40px;
+          color: $blu;
+        }
+        .project-body-two-about {
+          width: 86%;
+          height: 30%;
+        }
+        .project-body-two-tech {
+          word-spacing: 20px;
+          color: $greyish;
+          font-family: $recursive;
+          height: 15%;
+        }
+        .project-body-two-links {
+          word-spacing: 20px;
+          color: $greyish;
+          font-family: $recursive;
+        }
+      }
+    }
+    .project-body-extras {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      .extra-projects-title-container {
+        width: 100%;
+        text-align: left;
+        h2 {
+          color: $greyish;
+          font-family: $recursive;
+        }
+      }
+      .project-thumbnails-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+  }
 }

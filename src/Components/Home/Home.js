@@ -93,12 +93,12 @@ const Home = () => {
           <div className="line-wrap" styles={{ marginTop: 20 }}>
             <div className="line">
               <h2 className="home-title-2" ref={(e) => (title2 = e)}>
-                Hi, I am a full stack web developer who builds clean and
-                effective websites and applications.
+                Hi, I am a full stack developer who builds clean and effective
+                websites and applications.
               </h2>
             </div>
           </div>
-          <div className="line-wrap" styles={{ marginTop: 90 }}>
+          <div className="line-wrap" styles={{ marginTop: 150 }}>
             <div className="line">
               <h2 className="home-title-3" ref={(e) => (title3 = e)}>
                 View my <span>projects</span> or <span>get in touch.</span>

@@ -4,8 +4,7 @@
 .projects-container {
   width: 96vw;
   margin-left: 4vw;
-  height: 100vh;
-  background-color: #232931;
+  background-color: #161e29;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,7 +14,177 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: hidden;
   position: relative;
+}
+
+.projects-container .projects-body {
+  width: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+}
+
+.projects-container .projects-body .projects-body-title-container {
+  width: 100%;
+  text-align: left;
+  height: 115px;
+}
+
+.projects-container .projects-body .projects-body-title-container h2 {
+  color: #eeeeee50;
+  font-family: "Recursive", sans-serif;
+}
+
+.projects-container .projects-body .project-body-one {
+  width: 100%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.projects-container .projects-body .project-body-one .project-body-one-info,
+.projects-container .projects-body .project-body-one .project-body-image-container {
+  height: 100%;
+  width: 50%;
+}
+
+.projects-container .projects-body .project-body-one .project-body-one-info {
+  font-family: "Roboto", sans-serif;
+  color: #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projects-container .projects-body .project-body-one .project-body-one-info .project-body-one-title {
+  width: 100%;
+  height: 20%;
+  font-size: 40px;
+  color: #4ecca3;
+}
+
+.projects-container .projects-body .project-body-one .project-body-one-info .project-body-one-about {
+  width: 90%;
+  height: 30%;
+}
+
+.projects-container .projects-body .project-body-one .project-body-one-info .project-body-one-tech {
+  word-spacing: 20px;
+  color: #eeeeee50;
+  font-family: "Recursive", sans-serif;
+  height: 15%;
+}
+
+.projects-container .projects-body .project-body-one .project-body-one-info .project-body-one-links {
+  word-spacing: 20px;
+  color: #eeeeee50;
+  font-family: "Recursive", sans-serif;
+}
+
+.projects-container .projects-body .project-body-two {
+  width: 100%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.projects-container .projects-body .project-body-two .project-body-two-info,
+.projects-container .projects-body .project-body-two .project-body-image-container {
+  height: 100%;
+  width: 50%;
+}
+
+.projects-container .projects-body .project-body-two .project-body-two-info {
+  font-family: "Roboto", sans-serif;
+  color: #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: right;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projects-container .projects-body .project-body-two .project-body-two-info .project-body-two-title {
+  width: 100%;
+  height: 20%;
+  font-size: 40px;
+  color: #4ecca3;
+}
+
+.projects-container .projects-body .project-body-two .project-body-two-info .project-body-two-about {
+  width: 86%;
+  height: 30%;
+}
+
+.projects-container .projects-body .project-body-two .project-body-two-info .project-body-two-tech {
+  word-spacing: 20px;
+  color: #eeeeee50;
+  font-family: "Recursive", sans-serif;
+  height: 15%;
+}
+
+.projects-container .projects-body .project-body-two .project-body-two-info .project-body-two-links {
+  word-spacing: 20px;
+  color: #eeeeee50;
+  font-family: "Recursive", sans-serif;
+}
+
+.projects-container .projects-body .project-body-extras {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.projects-container .projects-body .project-body-extras .extra-projects-title-container {
+  width: 100%;
+  text-align: left;
+}
+
+.projects-container .projects-body .project-body-extras .extra-projects-title-container h2 {
+  color: #eeeeee50;
+  font-family: "Recursive", sans-serif;
+}
+
+.projects-container .projects-body .project-body-extras .project-thumbnails-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 /*# sourceMappingURL=Projects.css.map */

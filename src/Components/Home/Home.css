@@ -5,7 +5,7 @@
   width: 96vw;
   margin-left: 4vw;
   height: 100vh;
-  background-color: #232931;
+  background-color: #161e29;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,6 +81,7 @@
   margin-left: 10px;
   margin-top: 25px;
   font-weight: 400;
+  width: 600px;
 }
 
 .home-container .home-titles-container .line-wrap .line .home-title-3 {
@@ -108,7 +109,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
+  position: fixed;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -117,5 +118,6 @@
           justify-content: space-evenly;
   top: 0;
   right: 0;
+  z-index: 10;
 }
 /*# sourceMappingURL=Home.css.map */
