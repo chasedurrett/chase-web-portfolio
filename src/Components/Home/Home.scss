@@ -29,7 +29,7 @@
     margin-left: 14px;
   }
   .home-titles-container {
-    width: 860px;
+    width: 1000px;
     z-index: 2;
     position: absolute;
     .line-wrap {
@@ -43,7 +43,6 @@
           font-family: $roboto;
           font-size: 100px;
           font-weight: 500;
-          padding: 2px;
           margin: 2px auto;
           .chase {
             transition: all 600ms;
@@ -57,7 +56,7 @@
           font-family: $roboto;
           color: #eeeeee80;
           font-size: 20px;
-          margin-left: 10px;
+          // margin-left: 10px;
           margin-top: 25px;
           font-weight: 400;
           width: 600px;
@@ -67,7 +66,7 @@
           font-family: $roboto;
           color: #eeeeee80;
           font-size: 20px;
-          margin-left: 10px;
+          // margin-left: 10px;
           font-weight: 400;
           span {
             transition: all ease 900ms;
@@ -82,7 +81,7 @@
   }
 
   .home-social-icons {
-    height: 230px;
+    height: 70px;
     width: 190px;
     margin-right: 20px;
     display: flex;

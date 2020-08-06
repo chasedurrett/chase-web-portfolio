@@ -11,9 +11,6 @@ const Home = () => {
   let title1 = useRef(null);
   let title2 = useRef(null);
   let title3 = useRef(null);
-  let button1 = useRef(null);
-  let markup1 = useRef(null);
-  let markup2 = useRef(null);
   let githubIcon = useRef(null);
   let linkedInIcon = useRef(null);
   let resumeButton = useRef(null);
@@ -43,7 +40,7 @@ const Home = () => {
     //   opacity: 0,
     //   delay: 1,
     // });
-    gsap.from([resumeButton, githubIcon, linkedInIcon], 0.3, {
+    gsap.from([resumeButton], 0.3, {
       opacity: 0,
       y: -50,
       delay: 1.5,
@@ -58,8 +55,8 @@ const Home = () => {
     // button1,
     // markup1,
     // markup2,
-    githubIcon,
-    linkedInIcon,
+    // githubIcon,
+    // linkedInIcon,
     resumeButton,
   ]);
 
@@ -71,11 +68,11 @@ const Home = () => {
       <div
         className="hero-container"
         style={{
-          position: "absolute",
+          // position: "absolute",
           height: 500,
-          width: 800,
-          left: 140,
-          top: 160,
+          width: 1000,
+          // left: 180,
+          // top: 160,
         }}
       >
         <div className="home-titles-container" style={{ position: "absolute" }}>
@@ -93,7 +90,7 @@ const Home = () => {
           <div className="line-wrap" styles={{ marginTop: 20 }}>
             <div className="line">
               <h2 className="home-title-2" ref={(e) => (title2 = e)}>
-                Hi, I am a full stack developer who builds clean and effective
+                Hi, I am a full stack developer who builds
                 websites and applications.
               </h2>
             </div>
@@ -145,17 +142,17 @@ const Home = () => {
         </h3>
       </div> */}
       <div className="home-social-icons">
-      <Button
+        <Button
           ref={(e) => (resumeButton = e)}
           className={classes.buttonResume}
         >
           Resume
         </Button>
-        <GitHubIcon ref={(e) => (githubIcon = e)} className={classes.gitHub} />
+        {/* <GitHubIcon ref={(e) => (githubIcon = e)} className={classes.gitHub} />
         <LinkedInIcon
           ref={(e) => (linkedInIcon = e)}
           className={classes.linked}
-        />
+        /> */}
       </div>
     </div>
   );

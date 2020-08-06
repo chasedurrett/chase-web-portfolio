@@ -10,4 +10,58 @@
   align-items: center;
   overflow: hidden;
   position: relative;
+  .about-body{
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    .about-info, .about-contact{
+      width: 50%;
+      height: 525px;
+      border-bottom: $blu 1px solid;
+    }
+    .about-info{
+      color: $whiteish;
+      text-align: left;
+      font-family: $roboto;
+      h2{
+        font-family: $recursive;
+        font-size: 50px;
+      }
+      h4{
+        font-family: $roboto;
+        color: $blu;
+      }
+      ul{
+        list-style-type: circle;
+        width: 100px;
+        column-count: 2;
+        column-gap: 220px;
+        height: 100px;
+        font-family: $recursive;
+      }
+    }
+    .about-contact{
+      color: $whiteish;
+      font-family: $roboto;
+      text-align: right;
+      h2{
+        font-family: $recursive;
+        font-size: 50px;
+      }
+    }
+    .about-icon-container{
+      width: 100%;
+      height: 150px;
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .about-socials-container{
+      width: 100%;
+      height: 10px;
+      color: $whiteish;
+      font-family: $roboto;
+    }
+  }
 }

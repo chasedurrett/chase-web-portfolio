@@ -3,7 +3,10 @@ import "./Projects.css";
 import Stems from "./stems.png";
 import Echo from "./echo.png";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkIcon from '@material-ui/icons/Link';
 import { makeStyles, withStyles } from "@material-ui/core/styles";
+import { Link } from "@material-ui/core";
+
 
 const Projects = () => {
   const classes = useStyles();
@@ -26,12 +29,12 @@ const Projects = () => {
               React Node Express S3 Sass Material-UI
             </div>
             <div className="project-body-one-links">
-              <GitHubIcon className={classes.gitHub} />
+              <GitHubIcon className={classes.gitHub}  /> <LinkIcon className={classes.url} />
             </div>
           </div>
           <div className="project-body-image-container">
             <img
-              style={{ borderRadius: 5, height: 300, width: 500 }}
+              style={{ borderRadius: 5, height: 300, width: 500, boxShadow: '4px 4px 8px rgba(0, 0, 0, 0.6)'}}
               src={Echo}
             />
           </div>
@@ -39,7 +42,7 @@ const Projects = () => {
         <div className="project-body-two">
           <div className="project-body-image-container">
             <img
-              style={{ borderRadius: 5, height: 300, width: 500 }}
+              style={{ borderRadius: 5, height: 300, width: 500, boxShadow: '4px 4px 8px rgba(0, 0, 0, 0.6)' }}
               src={Stems}
             />
           </div>
@@ -55,7 +58,7 @@ const Projects = () => {
               React Node Express S3 Sass
             </div>
             <div className="project-body-two-links">
-              <GitHubIcon className={classes.gitHub} />
+              <GitHubIcon className={classes.gitHub}  /> <LinkIcon className={classes.url} />
             </div>
           </div>
         </div>
@@ -64,10 +67,30 @@ const Projects = () => {
             <h2>Other projects</h2>
           </div>
           <div className="project-thumbnails-container">
-            <img />
-            <img />
-            <img />
-            <img />
+            <div className="project-thumbnail">
+              <div className="project-thumbnail-title-container"><h2 className="project-thumbnail-title">Reddit Bot</h2></div>
+              <div className="project-thumbnail-content-container"><p>A bot created in Node.js to be the automated moderator for a subreddit I created on Reddit.</p></div>
+              <div className="project-thumbnail-tech">Node Snoowrap Snoostorm Dotenv</div>
+              <div className="project-thumbnail-links-container"><GitHubIcon className={classes.gitHub}/> <LinkIcon className={classes.url}/></div>
+            </div>
+            <div className="project-thumbnail">
+              <div className="project-thumbnail-title-container"><h2 className="project-thumbnail-title">Subscription Tracker</h2></div>
+              <div className="project-thumbnail-content-container"><p>An application to simply keep track of monthly subscriptions. Users can add, edit, and delete monthly subscriptions and see their monthly total.</p></div>
+              <div className="project-thumbnail-tech">React Express Axios CSS</div>
+              <div className="project-thumbnail-links-container"><GitHubIcon className={classes.gitHub}/> <LinkIcon className={classes.url}/></div>
+            </div>
+            <div className="project-thumbnail">
+              <div className="project-thumbnail-title-container"><h2 className="project-thumbnail-title">J. Pastel</h2></div>
+              <div className="project-thumbnail-content-container"><p>A website I created for my band J. Pastel. An experiment with react-particles</p></div>
+              <div className="project-thumbnail-tech">React React-Particles Sass</div>
+              <div className="project-thumbnail-links-container"><GitHubIcon className={classes.gitHub}/> <LinkIcon className={classes.url}/></div>
+            </div>
+            <div className="project-thumbnail">
+              <div className="project-thumbnail-title-container"><h2 className="project-thumbnail-title">Soft UI Clock</h2></div>
+              <div className="project-thumbnail-content-container"><p>A simple clock created with react-clock and was an experiment with the increasingly popular Neumorphism design.</p></div>
+              <div className="project-thumbnail-tech">React React-Clock CSS</div>
+              <div className="project-thumbnail-links-container"><GitHubIcon className={classes.gitHub}/> <LinkIcon className={classes.url}/></div>
+            </div>
           </div>
         </div>
       </div>
@@ -143,4 +166,13 @@ const useStyles = makeStyles((theme) => ({
       cursor: "pointer",
     },
   },
+  url: {
+    color: "#eeeeee",
+    height: 25,
+    width: 25,
+    "&:hover": {
+      color: "#4ecca3",
+      cursor: "pointer",
+    },
+  }
 }));

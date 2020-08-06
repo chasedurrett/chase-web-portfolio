@@ -5,7 +5,7 @@
   width: 96vw;
   margin-left: 4vw;
   height: 100vh;
-  background-color: #161e29;
+  background-color: #102036;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,7 +20,7 @@
 }
 
 .home-container .sue {
-  color: #eeeeee50;
+  color: #929292;
   font-size: 70px;
   font-family: "Sue Ellen Francisco", cursive;
   height: 10px;
@@ -30,7 +30,7 @@
 }
 
 .home-container .sue2 {
-  color: #eeeeee50;
+  color: #929292;
   font-size: 60px;
   font-family: "Sue Ellen Francisco", cursive;
   position: absolute;
@@ -40,7 +40,7 @@
 }
 
 .home-container .home-titles-container {
-  width: 860px;
+  width: 1000px;
   z-index: 2;
   position: absolute;
 }
@@ -56,11 +56,10 @@
 }
 
 .home-container .home-titles-container .line-wrap .line .home-title-1 {
-  color: #eeeeee;
+  color: #dbdbdb;
   font-family: "Roboto", sans-serif;
   font-size: 100px;
   font-weight: 500;
-  padding: 2px;
   margin: 2px auto;
 }
 
@@ -74,22 +73,20 @@
 }
 
 .home-container .home-titles-container .line-wrap .line .home-title-2 {
-  color: #eeeeee;
+  color: #dbdbdb;
   font-family: "Roboto", sans-serif;
   color: #eeeeee80;
   font-size: 20px;
-  margin-left: 10px;
   margin-top: 25px;
   font-weight: 400;
   width: 600px;
 }
 
 .home-container .home-titles-container .line-wrap .line .home-title-3 {
-  color: #eeeeee;
+  color: #dbdbdb;
   font-family: "Roboto", sans-serif;
   color: #eeeeee80;
   font-size: 20px;
-  margin-left: 10px;
   font-weight: 400;
 }
 
@@ -104,7 +101,7 @@
 }
 
 .home-container .home-social-icons {
-  height: 230px;
+  height: 70px;
   width: 190px;
   margin-right: 20px;
   display: -webkit-box;

@@ -3,10 +3,9 @@ import "./App.css";
 import SideNav from "./Components/SideNav/SideNav";
 import Home from "./Components/Home/Home";
 import Projects from "./Components/Projects/Projects";
-import Skills from "./Components/Skills/Skills";
+// import Skills from "./Components/Skills/Skills";
 import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
-import { withRouter } from "react-router-dom";
 
 function App() {
   return (
@@ -14,11 +13,11 @@ function App() {
       <SideNav />
       <Home />
       <Projects />
-      <Skills />
+      {/* <Skills /> */}
       <About />
-      <Contact />
+      {/* <Contact /> */}
     </div>
   );
 }
 
-export default withRouter(App);
+export default App;
