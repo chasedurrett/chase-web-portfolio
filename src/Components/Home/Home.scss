@@ -6,6 +6,12 @@
   }
 }
 
+@mixin  break3 {
+  @media (max-width: 500px) {
+    @content
+  }
+}
+
 .home-container {
   width: 100vw;
   height: 100vh;
@@ -35,6 +41,9 @@
           @include break1(){
             font-size: 75px;
           }
+          @include break3(){
+            font-size: 45px;
+          }
           font-weight: 500;
           margin: 2px auto;
           .chase {
@@ -51,6 +60,9 @@
           @include break1(){
             font-size: 45px;
           }
+          @include break3(){
+            font-size: 30px;
+          }
           margin-top: 15px;
           font-weight: 400;
         }
@@ -59,6 +71,9 @@
           color: #eeeeee80;
           font-size: 20px;
           @include break1(){
+            font-size: 15px;
+          }
+          @include break3(){
             font-size: 15px;
           }
           margin-top: 15px;

@@ -54,6 +54,12 @@
   }
 }
 
+@media (max-width: 500px) {
+  .home-container .home-titles-container .line-wrap .line .home-title-1 {
+    font-size: 45px;
+  }
+}
+
 .home-container .home-titles-container .line-wrap .line .home-title-1 .chase {
   -webkit-transition: all 600ms;
   transition: all 600ms;
@@ -77,6 +83,12 @@
   }
 }
 
+@media (max-width: 500px) {
+  .home-container .home-titles-container .line-wrap .line .home-title-2 {
+    font-size: 30px;
+  }
+}
+
 .home-container .home-titles-container .line-wrap .line .home-title-3 {
   font-family: "Roboto", sans-serif;
   color: #eeeeee80;
@@ -86,6 +98,12 @@
 }
 
 @media (max-width: 1020px) {
+  .home-container .home-titles-container .line-wrap .line .home-title-3 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 500px) {
   .home-container .home-titles-container .line-wrap .line .home-title-3 {
     font-size: 15px;
   }

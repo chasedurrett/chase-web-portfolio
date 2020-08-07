@@ -12,6 +12,19 @@
   }
 }
 
+@mixin  break3 {
+  @media (max-width: 500px) {
+    @content
+  }
+}
+
+@mixin break4 {
+  @media (max-width: 380px){
+    @content
+  }
+}
+
+
 .projects-container {
   width: 100vw;
   background-color: $darkMetal;
@@ -32,10 +45,19 @@
     @include break2(){
       width: 500px;
     }
+    @include break3(){
+      width: 400px;
+    }
+    @include break4(){
+      width: 360px;
+    }
     .projects-body-title-container {
       width: 100%;
       text-align: left;
       height: 115px;
+      @include break4(){
+        text-align: center;
+      }
       h2 {
         color: $greyish;
         font-family: $recursive;
@@ -50,6 +72,12 @@
         position: relative;
       }
       @include break2(){
+        height: 600px;
+      }
+      @include break3(){
+        height: 700px;
+      }
+      @include break4(){
         height: 600px;
       }
       .project-body-one-info,
@@ -76,6 +104,12 @@
             height: 200px;
             width: 350px;
           }
+          @include break3(){
+            filter: blur(5px) opacity(15%);
+          }
+          @include break4(){
+            filter: blur(5px) opacity(15%);
+          }
         }
       }
       .project-body-one-info {
@@ -94,16 +128,25 @@
           font-size: 40px;
           color: $blu;
           font-family: $recursive;
+          @include break4(){
+            font-size: 70px;
+          }
         }
         .project-body-one-about {
           width: 86%;
           height: 30%;
+          @include break4(){
+            width: 300px;
+          }
         }
         .project-body-one-tech {
           word-spacing: 20px;
           color: $greyish;
           font-family: $recursive;
           height: 15%;
+          @include break4(){
+            width: 300px;
+          }
         }
         .project-body-one-links {
           word-spacing: 20px;
@@ -119,6 +162,12 @@
       display: flex;
       justify-content: space-evenly;
       @include break2(){
+        height: 600px;
+      }
+      @include break3(){
+        height: 700px;
+      }
+      @include break4(){
         height: 600px;
       }
       .project-body-two-info,
@@ -142,6 +191,12 @@
             height: 200px;
             width: 350px;
           }
+          @include break3(){
+            filter: blur(5px) opacity(15%);
+          }
+          @include break4(){
+            filter: blur(5px) opacity(15%);
+          }
         }
       }
       .project-body-two-info {
@@ -157,16 +212,27 @@
           font-size: 40px;
           font-family: $recursive;
           color: $blu;
+          @include break4(){
+            font-size: 70px;
+            margin-right: 35px;
+
+          }
         }
         .project-body-two-about {
           width: 86%;
           height: 30%;
+          @include break4(){
+            width: 300px;
+          }
         }
         .project-body-two-tech {
           word-spacing: 20px;
           color: $greyish;
           font-family: $recursive;
           height: 15%;
+          @include break4(){
+            width: 300px;
+          }
         }
         .project-body-two-links {
           word-spacing: 20px;
@@ -212,6 +278,7 @@
           flex-direction: column;
           box-shadow: 2px 2px 3px $lightMetal;
           border-bottom: $blu 1px solid;
+          transition: all ease 400ms;
           @include break1(){
             @include break1(){
               height: 300px;

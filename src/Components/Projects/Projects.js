@@ -90,7 +90,7 @@ const Projects = () => {
             </div>
             <div className="project-thumbnail">
               <div className="project-thumbnail-title-container"><h2 className="project-thumbnail-title">Soft UI Clock</h2></div>
-              <div className="project-thumbnail-content-container"><p>A simple clock created with react-clock and was an experiment with the increasingly popular Neumorphism design.</p></div>
+              <div className="project-thumbnail-content-container"><p>A simple clock created with react-clock. An experiment with the increasingly popular Neumorphism design.</p></div>
               <div className="project-thumbnail-tech">React React-Clock CSS</div>
               <div className="project-thumbnail-links-container"><GitHubIcon className={classes.gitHub}/> <LinkIcon className={classes.url}/></div>
             </div>
