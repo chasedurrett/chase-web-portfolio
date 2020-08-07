@@ -1,8 +1,19 @@
 @import "../../SassGlobals/variables.scss";
 
+@mixin break1 {
+  @media (max-width: 1020px) {
+    @content;
+  }
+}
+
+@mixin break2 {
+  @media (max-width: 710px) {
+    @content;
+  }
+}
+
 .about-container {
-  width: 96vw;
-  margin-left: 4vw;
+  width: 100vw;
   height: 100vh;
   background-color: $darkMetal;
   display: flex;
@@ -10,22 +21,44 @@
   align-items: center;
   overflow: hidden;
   position: relative;
+  // @include break2(){
+  //   height: initial;
+  // }
   .about-body{
     width: 1000px;
+    @include break1(){
+      width: 700px;
+    }
+    @include break2(){
+      width: 500px;
+    }
     display: flex;
     flex-wrap: wrap;
     .about-info, .about-contact{
       width: 50%;
       height: 525px;
       border-bottom: $blu 1px solid;
+      @include break1(){
+       border-bottom: none;
+      }
+      @include break2(){
+        width: 100%;
+      }
     }
     .about-info{
       color: $whiteish;
       text-align: left;
       font-family: $roboto;
+      @include break2(){
+        display: flex;
+        flex-direction: column;
+      }
       h2{
         font-family: $recursive;
         font-size: 50px;
+        @include break2(){
+          font-size: 30px;
+        }
       }
       h4{
         font-family: $roboto;
@@ -38,15 +71,64 @@
         column-gap: 220px;
         height: 100px;
         font-family: $recursive;
+        @include break2(){
+          width: 300px;
+          margin: auto;
+          margin-left: 50px;
+        }
       }
     }
     .about-contact{
       color: $whiteish;
       font-family: $roboto;
       text-align: right;
+      @include break2(){
+        display: flex;
+        flex-wrap: wrap;
+        text-align: left;
+        height: 50px;
+        margin-top: 20px;
+      }
       h2{
+        @include break2(){
+          width: 100%;
+          height: 50px;
+          margin: 0;
+          font-size: 30px;
+          display: none;
+        }
         font-family: $recursive;
         font-size: 50px;
+      }
+      h4{
+        font-family: $roboto;
+        @include break2(){
+          width: 50%;
+          height: 10px;
+          margin: auto;
+          height: 50px;
+          text-align: left;
+        }
+      }
+      .phn-num{
+        @include break2(){
+          text-align: right;
+        }
+      }
+      .about-contacts-container{
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-around;
+        @include break2(){
+          flex-direction: row;
+          height: 50px;
+          width: 500px;
+          align-items: center !important;
+          justify-content: space-around;
+          margin: auto;
+        }
       }
     }
     .about-icon-container{
@@ -56,12 +138,26 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      @include break1(){
+        height: 40px;
+        margin-top: 110px;
+      }
+      @include break2(){
+        padding-top: 10px;
+      }
+      .planet-icon{
+        height: 100px;
+        @include break1(){
+          height: 40px;
+        }
+      }
     }
     .about-socials-container{
       width: 100%;
       height: 10px;
       color: $whiteish;
       font-family: $roboto;
+
     }
   }
 }

@@ -1,5 +1,5 @@
 import React, {useRef, useEffect} from "react";
-import "./SideNav.css";
+import "./TopNav.css";
 import HomeOutlinedIcon from "@material-ui/icons/HomeOutlined";
 import AccountTreeOutlinedIcon from "@material-ui/icons/AccountTreeOutlined";
 import TuneOutlinedIcon from "@material-ui/icons/TuneOutlined";
@@ -29,8 +29,8 @@ const SideNav = () => {
   }, [icon1, icon2, icon3])
 
   return (
-    <div className="side-nav-container">
-      <nav className="side-nav-links">
+    <div className="top-nav-container">
+      <nav className="top-nav-links">
         <Link
           ref={(e) => (icon1 = e)}
           activeClass="active"
@@ -45,7 +45,7 @@ const SideNav = () => {
             TransitionComponent={Zoom}
             className={classes.toolTip}
             title="Home"
-            placement="right"
+            placement="bottom"
           >
             <HomeOutlinedIcon className={classes.root}></HomeOutlinedIcon>
           </LightTooltip>
@@ -64,7 +64,7 @@ const SideNav = () => {
             TransitionComponent={Zoom}
             className={classes.toolTip}
             title="Projects"
-            placement="right"
+            placement="bottom"
           >
             <AccountTreeOutlinedIcon
               className={classes.root}
@@ -85,7 +85,7 @@ const SideNav = () => {
             TransitionComponent={Zoom}
             className={classes.toolTip}
             title="About"
-            placement="right"
+            placement="bottom"
           >
             <InfoOutlinedIcon className={classes.root}></InfoOutlinedIcon>
           </LightTooltip>

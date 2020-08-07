@@ -1,8 +1,13 @@
 @import "../../SassGlobals/variables.scss";
 
+@mixin break1 {
+  @media (max-width: 1020px) {
+    @content;
+  }
+}
+
 .home-container {
-  width: 96vw;
-  margin-left: 4vw;
+  width: 100vw;
   height: 100vh;
   background-color: $darkMetal;
   display: flex;
@@ -10,26 +15,11 @@
   align-items: center;
   overflow: hidden;
   position: relative;
-  .sue {
-    color: $greyish;
-    font-size: 70px;
-    font-family: $sue;
-    height: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .sue2 {
-    color: $greyish;
-    font-size: 60px;
-    font-family: $sue;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin-left: 14px;
-  }
   .home-titles-container {
     width: 1000px;
+    @include break1(){
+      width: 100%;
+    }
     z-index: 2;
     position: absolute;
     .line-wrap {
@@ -37,11 +27,14 @@
       height: 100px;
       .line {
         height: 185px;
-        text-align: left;
+        text-align: center;
         .home-title-1 {
           color: $whiteish;
           font-family: $roboto;
           font-size: 100px;
+          @include break1(){
+            font-size: 75px;
+          }
           font-weight: 500;
           margin: 2px auto;
           .chase {
@@ -52,45 +45,26 @@
           }
         }
         .home-title-2 {
-          color: $whiteish;
           font-family: $roboto;
           color: #eeeeee80;
-          font-size: 20px;
-          // margin-left: 10px;
-          margin-top: 25px;
-          font-weight: 400;
-          width: 600px;
-        }
-        .home-title-3 {
-          color: $whiteish;
-          font-family: $roboto;
-          color: #eeeeee80;
-          font-size: 20px;
-          // margin-left: 10px;
-          font-weight: 400;
-          span {
-            transition: all ease 900ms;
-            &:hover {
-              cursor: pointer;
-              color: $blu;
-            }
+          font-size: 70px;
+          @include break1(){
+            font-size: 45px;
           }
+          margin-top: 15px;
+          font-weight: 400;
+        }
+        .home-title-3{
+          font-family: $roboto;
+          color: #eeeeee80;
+          font-size: 20px;
+          @include break1(){
+            font-size: 15px;
+          }
+          margin-top: 15px;
+          font-weight: 400;
         }
       }
     }
-  }
-
-  .home-social-icons {
-    height: 70px;
-    width: 190px;
-    margin-right: 20px;
-    display: flex;
-    position: fixed;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-evenly;
-    top: 0;
-    right: 0;
-    z-index: 10;
   }
 }

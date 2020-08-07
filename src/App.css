@@ -7,3 +7,9 @@
   flex-wrap: wrap;
   /* overflow-x: hidden; */
 }
+
+@media (max-width: 1130px){
+  .side-nav{
+    display: none;
+  }
+}

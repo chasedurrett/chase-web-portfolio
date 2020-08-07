@@ -1,0 +1,22 @@
+@import "../../SassGlobals/variables.scss";
+
+.top-nav-container {
+    background-color: $darkMetal;
+    height: 50px;
+    min-height: 50px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 3;
+    justify-content: flex-end;
+    box-shadow: 2px 2px 2px $lightMetal;
+    .top-nav-links {
+      display: flex;
+      height: 50px;
+      width: 200px;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+  

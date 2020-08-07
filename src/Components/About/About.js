@@ -6,10 +6,13 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import GitHubIcon from "@material-ui/icons/GitHub";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
-
+import Button from "@material-ui/core/Button";
+import Resume from './Chase_Durrett_Resume_2020.pdf'
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const About = () => {
   const classes = useStyles();
+  const resumeButtonMQ = useMediaQuery('(max-width: 710px)')
   return (
     <div id="about" className="about-container">
       <div className="about-body">
@@ -33,16 +36,21 @@ const About = () => {
         <div className="about-contact">
         <h2>Contact</h2>
         <h4>chase.durrett80@gmail.com</h4>
-        <h4>+1 817 880 3274</h4>
-        <div style={{height: 200, display: 'flex', flexDirection: 'column', alignItems: 'flex-end', justifyContent: 'space-around'}}>
+        <h4 className="phn-num">+1 817 880 3274</h4>
+        <div className="about-contacts-container">
         <LinkedInIcon className={classes.linked}/>
         <GitHubIcon className={classes.gitHub}/>
         <TwitterIcon className={classes.gitHub}/>
         <InstagramIcon className={classes.gitHub}/>
+        <a href={Resume} target="_blank"> <Button
+          className={resumeButtonMQ ? classes.buttonResumeMQ : classes.buttonResume}
+        >
+          Resume
+        </Button></a>
         </div>
         </div>
         <div className="about-icon-container">
-          <img style={{height: 100}} src={Planet}/>
+          <img className="planet-icon" src={Planet}/>
         </div>
         <div className="about-socials-container">
           <h6>Built by Chase Durrett</h6>
@@ -62,14 +70,14 @@ const useStyles = makeStyles((theme) => ({
       height: 45,
       transition: "all 400ms",
       "&:hover": {
-        color: "#00adb5",
+        color: "#BB86F3",
         cursor: "pointer",
       },
       "&:focus": {
-        color: "#00adb5",
+        color: "#BB86F3",
       },
       "&:target": {
-        color: "#00adb5",
+        color: "#BB86F3",
       },
     },
   },
@@ -82,14 +90,30 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 18,
     "&:hover": {
       cursor: "pointer",
-      background: "#4ecca3",
+      background: "#BB86F3",
       boxShadow: "inset 3px 3px 2px #393e4628",
-      color: "#232931",
+      color: "#BB86F3",
     },
   },
   buttonResume: {
     background: "none",
-    border: "1px solid #4ecca3",
+    border: "1px solid #BB86F3",
+    width: 100,
+    height: 30,
+    marginTop: 20,
+    color: "#eeeeee",
+    fontFamily: "Recursive, sans-serif",
+    fontSize: 13,
+    "&:hover": {
+      cursor: "pointer",
+      background: "#BB86F3a1",
+      boxShadow: "inset 3px 3px 2px #393e4628",
+      color: "#eeeee",
+    },
+  },
+  buttonResumeMQ: {
+    background: "none",
+    border: "1px solid #BB86F3",
     width: 100,
     height: 30,
     color: "#eeeeee",
@@ -97,9 +121,9 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 13,
     "&:hover": {
       cursor: "pointer",
-      background: "#4ecca3",
+      background: "#BB86F3a1",
       boxShadow: "inset 3px 3px 2px #393e4628",
-      color: "#232931",
+      color: "#eeeee",
     },
   },
   gitHub: {
@@ -107,7 +131,7 @@ const useStyles = makeStyles((theme) => ({
     height: 25,
     width: 25,
     "&:hover": {
-      color: "#4ecca3",
+      color: "#BB86F3",
       cursor: "pointer",
     },
   },
@@ -116,7 +140,7 @@ const useStyles = makeStyles((theme) => ({
     height: 32,
     width: 32,
     "&:hover": {
-      color: "#4ecca3",
+      color: "#BB86F3",
       cursor: "pointer",
     },
   },

@@ -34,7 +34,7 @@ const Projects = () => {
           </div>
           <div className="project-body-image-container">
             <img
-              style={{ borderRadius: 5, height: 300, width: 500, boxShadow: '4px 4px 8px rgba(0, 0, 0, 0.6)'}}
+              style={{ borderRadius: 5, boxShadow: '4px 4px 8px #101010'}}
               src={Echo}
             />
           </div>
@@ -42,7 +42,10 @@ const Projects = () => {
         <div className="project-body-two">
           <div className="project-body-image-container">
             <img
-              style={{ borderRadius: 5, height: 300, width: 500, boxShadow: '4px 4px 8px rgba(0, 0, 0, 0.6)' }}
+              style={{
+                 borderRadius: 5, 
+                 boxShadow: '4px 4px 8px #101010',
+                }}
               src={Stems}
             />
           </div>
@@ -71,11 +74,11 @@ const Projects = () => {
               <div className="project-thumbnail-title-container"><h2 className="project-thumbnail-title">Reddit Bot</h2></div>
               <div className="project-thumbnail-content-container"><p>A bot created in Node.js to be the automated moderator for a subreddit I created on Reddit.</p></div>
               <div className="project-thumbnail-tech">Node Snoowrap Snoostorm Dotenv</div>
-              <div className="project-thumbnail-links-container"><GitHubIcon className={classes.gitHub}/> <LinkIcon className={classes.url}/></div>
+              <div className="project-thumbnail-links-container"><GitHubIcon className={classes.gitHub}/></div>
             </div>
             <div className="project-thumbnail">
-              <div className="project-thumbnail-title-container"><h2 className="project-thumbnail-title">Subscription Tracker</h2></div>
-              <div className="project-thumbnail-content-container"><p>An application to simply keep track of monthly subscriptions. Users can add, edit, and delete monthly subscriptions and see their monthly total.</p></div>
+              <div className="project-thumbnail-title-container"><h2 className="project-thumbnail-title">Subscriptions</h2></div>
+              <div className="project-thumbnail-content-container"><p>An application to keep track of monthly subscriptions. Add, edit, and delete subscriptions and see your monthly total.</p></div>
               <div className="project-thumbnail-tech">React Express Axios CSS</div>
               <div className="project-thumbnail-links-container"><GitHubIcon className={classes.gitHub}/> <LinkIcon className={classes.url}/></div>
             </div>
@@ -108,14 +111,14 @@ const useStyles = makeStyles((theme) => ({
       height: 45,
       transition: "all 400ms",
       "&:hover": {
-        color: "#00adb5",
+        color: "#BB86F3",
         cursor: "pointer",
       },
       "&:focus": {
-        color: "#00adb5",
+        color: "#BB86F3",
       },
       "&:target": {
-        color: "#00adb5",
+        color: "#BB86F3",
       },
     },
   },
@@ -128,7 +131,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 18,
     "&:hover": {
       cursor: "pointer",
-      background: "#4ecca3",
+      background: "#BB86F3",
       boxShadow: "inset 3px 3px 2px #393e4628",
       color: "#232931",
     },
@@ -143,9 +146,9 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 13,
     "&:hover": {
       cursor: "pointer",
-      background: "#4ecca3",
+      background: "#BB86F3",
       boxShadow: "inset 3px 3px 2px #393e4628",
-      color: "#232931",
+      color: "#BB86F3",
     },
   },
   gitHub: {
@@ -153,7 +156,7 @@ const useStyles = makeStyles((theme) => ({
     height: 25,
     width: 25,
     "&:hover": {
-      color: "#4ecca3",
+      color: "#BB86F3",
       cursor: "pointer",
     },
   },
@@ -162,7 +165,7 @@ const useStyles = makeStyles((theme) => ({
     height: 32,
     width: 32,
     "&:hover": {
-      color: "#4ecca3",
+      color: "#BB86F3",
       cursor: "pointer",
     },
   },
@@ -171,7 +174,7 @@ const useStyles = makeStyles((theme) => ({
     height: 25,
     width: 25,
     "&:hover": {
-      color: "#4ecca3",
+      color: "#BB86F3",
       cursor: "pointer",
     },
   }
