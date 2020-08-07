@@ -38,10 +38,10 @@ const About = () => {
         <h4>chase.durrett80@gmail.com</h4>
         <h4 className="phn-num">+1 817 880 3274</h4>
         <div className="about-contacts-container">
-        <LinkedInIcon className={classes.linked}/>
-        <GitHubIcon className={classes.gitHub}/>
-        <TwitterIcon className={classes.gitHub}/>
-        <InstagramIcon className={classes.gitHub}/>
+        <a href="https://www.linkedin.com/in/chasedurrett/" target="_blank"><LinkedInIcon className={classes.linked}/></a>
+        <a href="https://github.com/chasedurrett" target="_blank"><GitHubIcon className={classes.gitHub}/></a>
+        <a href="https://twitter.com/donutboyband" target="_blank"><TwitterIcon className={classes.gitHub}/></a>
+        <a href="https://www.instagram.com/chasedurrett/" target="_blank"><InstagramIcon className={classes.gitHub}/></a>
         <a href={Resume} target="_blank"> <Button
           className={resumeButtonMQ ? classes.buttonResumeMQ : classes.buttonResume}
         >

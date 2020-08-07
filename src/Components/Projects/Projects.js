@@ -29,7 +29,7 @@ const Projects = () => {
               React Node Express S3 Sass Material-UI
             </div>
             <div className="project-body-one-links">
-              <GitHubIcon className={classes.gitHub}  /> <LinkIcon className={classes.url} />
+              <a href="https://github.com/reddit-clone-wr1/Echo" target="_blank"><GitHubIcon className={classes.gitHub}/></a> <a href="echo.chasedurrett.com" target="_blank"><LinkIcon className={classes.url} /></a>
             </div>
           </div>
           <div className="project-body-image-container">
@@ -61,7 +61,7 @@ const Projects = () => {
               React Node Express S3 Sass
             </div>
             <div className="project-body-two-links">
-              <GitHubIcon className={classes.gitHub}  /> <LinkIcon className={classes.url} />
+             <a href="https://github.com/chasedurrett/stemz" target="_blank"><GitHubIcon className={classes.gitHub} /></a>   <a href="stems.chasedurrett.com" target="_blank"><LinkIcon className={classes.url}/></a> 
             </div>
           </div>
         </div>
@@ -74,25 +74,25 @@ const Projects = () => {
               <div className="project-thumbnail-title-container"><h2 className="project-thumbnail-title">Reddit Bot</h2></div>
               <div className="project-thumbnail-content-container"><p>A bot created in Node.js to be the automated moderator for a subreddit I created on Reddit.</p></div>
               <div className="project-thumbnail-tech">Node Snoowrap Snoostorm Dotenv</div>
-              <div className="project-thumbnail-links-container"><GitHubIcon className={classes.gitHub}/></div>
+              <div className="project-thumbnail-links-container"><a href="https://github.com/chasedurrett/chase_reddit_bot_node.js" target="_blank"><GitHubIcon className={classes.gitHub}/></a></div>
             </div>
             <div className="project-thumbnail">
               <div className="project-thumbnail-title-container"><h2 className="project-thumbnail-title">Subscriptions</h2></div>
               <div className="project-thumbnail-content-container"><p>An application to keep track of monthly subscriptions. Add, edit, and delete subscriptions and see your monthly total.</p></div>
               <div className="project-thumbnail-tech">React Express Axios CSS</div>
-              <div className="project-thumbnail-links-container"><GitHubIcon className={classes.gitHub}/> <LinkIcon className={classes.url}/></div>
+              <div className="project-thumbnail-links-container"><a href="https://github.com/chasedurrett/noDB-project-subscription-tracker/tree/master/subscription-tracker-app" target="_blank"><GitHubIcon className={classes.gitHub}/></a> <a href="subscriptions.chasedurrett.com" target="_blank"><LinkIcon className={classes.url}/></a></div>
             </div>
             <div className="project-thumbnail">
               <div className="project-thumbnail-title-container"><h2 className="project-thumbnail-title">J. Pastel</h2></div>
               <div className="project-thumbnail-content-container"><p>A website I created for my band J. Pastel. An experiment with react-particles</p></div>
               <div className="project-thumbnail-tech">React React-Particles Sass</div>
-              <div className="project-thumbnail-links-container"><GitHubIcon className={classes.gitHub}/> <LinkIcon className={classes.url}/></div>
+              <div className="project-thumbnail-links-container"><a href="https://github.com/chasedurrett/j.-pastel-website" target="_blank"><GitHubIcon className={classes.gitHub}/></a> <a href="http://www.jpastel.com" target="_blank"><LinkIcon className={classes.url}/></a></div>
             </div>
             <div className="project-thumbnail">
               <div className="project-thumbnail-title-container"><h2 className="project-thumbnail-title">Soft UI Clock</h2></div>
               <div className="project-thumbnail-content-container"><p>A simple clock created with react-clock. An experiment with the increasingly popular Neumorphism design.</p></div>
               <div className="project-thumbnail-tech">React React-Clock CSS</div>
-              <div className="project-thumbnail-links-container"><GitHubIcon className={classes.gitHub}/> <LinkIcon className={classes.url}/></div>
+              <div className="project-thumbnail-links-container"><a href="https://github.com/chasedurrett/soft-ui-react-clock/tree/master/soft-ui-clock" target="_blank"><GitHubIcon className={classes.gitHub}/></a> <a href="softuiclock.chasedurrett.com" target="_blank"><LinkIcon className={classes.url}/></a></div>
             </div>
           </div>
         </div>
