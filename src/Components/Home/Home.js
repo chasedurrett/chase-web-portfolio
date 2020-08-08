@@ -33,11 +33,11 @@ const Home = () => {
       <div
         className="hero-container"
       >
-        <div className="home-titles-container" style={{ position: "absolute" }}>
+        <div className="home-titles-container" >
           <div className="line-wrap" style={{marginTop: 20}}>
             <div
               className="line"
-              style={{ height: 10 }}
+              // style={{ height: 10 }}
               ref={(e) => (title1 = e)}
             >
               <h1 className="home-title-1">
@@ -52,7 +52,7 @@ const Home = () => {
               </h2>
             </div>
           </div>
-          <div className="line-wrap" style={{ marginTop: 100, height: 45 }}>
+          <div className="line-wrap" style={{ marginTop: 10, height: 45 }}>
             <div className="line" style={{height: 25}}>
               <h2 className="home-title-3" ref={(e) => (title3 = e)}>
                 [and other things]

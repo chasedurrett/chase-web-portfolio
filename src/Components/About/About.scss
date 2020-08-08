@@ -34,6 +34,7 @@
 .about-container {
   width: 100vw;
   height: 100vh;
+  min-height: 654px;
   background-color: $darkMetal;
   display: flex;
   justify-content: center;
@@ -85,10 +86,10 @@
         @include break2(){
           font-size: 30px;
         }
-        @include vertBreak1(){
-          font-size: 30px;
-          padding-top: 20px;
-        }
+        // @include vertBreak1(){
+        //   font-size: 30px;
+        //   padding-top: 20px;
+        // }
       }
       h4{
         font-family: $roboto;

@@ -4,6 +4,7 @@
 .about-container {
   width: 100vw;
   height: 100vh;
+  min-height: 654px;
   background-color: #161616;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -95,13 +96,6 @@
 @media (max-width: 710px) {
   .about-container .about-body .about-info h2 {
     font-size: 30px;
-  }
-}
-
-@media (max-height: 843px) {
-  .about-container .about-body .about-info h2 {
-    font-size: 30px;
-    padding-top: 20px;
   }
 }
 
