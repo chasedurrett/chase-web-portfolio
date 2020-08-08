@@ -12,8 +12,14 @@
   }
 }
 
+@mixin break4 {
+  @media (max-width: 380px){
+    @content
+  }
+}
+
 @mixin vertBreak1 {
-  @media (max-height: 813px) {
+  @media (max-height: 843px) {
     @content
   }
 }
@@ -29,7 +35,7 @@
   overflow: hidden;
  
   .hero-container{
-    width: 1000px;
+    width: 100%;
     margin: auto;
     height: 600px;
     // @include vertBreak1(){
@@ -51,7 +57,7 @@
         width: 100%;
       }
       @include vertBreak1(){
-        height: 400px;
+        height: 500px;
         margin-top: 100px;
       }
       z-index: 2;
@@ -60,7 +66,7 @@
         overflow: hidden;
         height: 100px;
         @include vertBreak1(){
-          height: 60px;
+          height: 90px;
           margin-top: 30px !important ;
         }
         .line {

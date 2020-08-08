@@ -42,7 +42,7 @@ const About = () => {
         <a href="https://github.com/chasedurrett" target="_blank"><GitHubIcon className={classes.gitHub}/></a>
         <a href="https://twitter.com/donutboyband" target="_blank"><TwitterIcon className={classes.gitHub}/></a>
         <a href="https://www.instagram.com/chasedurrett/" target="_blank"><InstagramIcon className={classes.gitHub}/></a>
-        <a href={Resume} target="_blank"> <Button
+        <a style={{textDecoration: 'none'}} href={Resume} target="_blank"> <Button
           className={classes.buttonResumeMQ}
         >
           Resume

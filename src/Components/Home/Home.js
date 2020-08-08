@@ -37,7 +37,7 @@ const Home = () => {
           <div className="line-wrap" style={{marginTop: 20}}>
             <div
               className="line"
-              style={{ height: 70 }}
+              style={{ height: 10 }}
               ref={(e) => (title1 = e)}
             >
               <h1 className="home-title-1">

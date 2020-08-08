@@ -22,7 +22,7 @@
 }
 
 .home-container .hero-container {
-  width: 1000px;
+  width: 100%;
   margin: auto;
   height: 600px;
 }
@@ -55,9 +55,9 @@
   }
 }
 
-@media (max-height: 813px) {
+@media (max-height: 843px) {
   .home-container .hero-container .home-titles-container {
-    height: 400px;
+    height: 500px;
     margin-top: 100px;
   }
 }
@@ -67,9 +67,9 @@
   height: 100px;
 }
 
-@media (max-height: 813px) {
+@media (max-height: 843px) {
   .home-container .hero-container .home-titles-container .line-wrap {
-    height: 60px;
+    height: 90px;
     margin-top: 30px !important;
   }
 }
