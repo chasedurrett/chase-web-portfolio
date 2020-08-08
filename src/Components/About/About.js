@@ -43,7 +43,7 @@ const About = () => {
         <a href="https://twitter.com/donutboyband" target="_blank"><TwitterIcon className={classes.gitHub}/></a>
         <a href="https://www.instagram.com/chasedurrett/" target="_blank"><InstagramIcon className={classes.gitHub}/></a>
         <a href={Resume} target="_blank"> <Button
-          className={classes.buttonResume}
+          className={classes.buttonResumeMQ}
         >
           Resume
         </Button></a>

@@ -53,7 +53,7 @@
 
 .about-container .about-body .about-info, .about-container .about-body .about-contact {
   width: 50%;
-  height: 525px;
+  height: 545px;
   border-bottom: #BB86F3 1px solid;
 }
 
@@ -95,6 +95,13 @@
 @media (max-width: 710px) {
   .about-container .about-body .about-info h2 {
     font-size: 30px;
+  }
+}
+
+@media (max-height: 813px) {
+  .about-container .about-body .about-info h2 {
+    font-size: 30px;
+    padding-top: 20px;
   }
 }
 
@@ -192,6 +199,12 @@
   }
 }
 
+@media (max-height: 813px) {
+  .about-container .about-body .about-contact h4 {
+    display: none;
+  }
+}
+
 @media (max-width: 710px) {
   .about-container .about-body .about-contact .phn-num {
     text-align: right;
@@ -228,6 +241,12 @@
     -ms-flex-pack: distribute;
         justify-content: space-around;
     margin: auto;
+  }
+}
+
+@media (max-height: 813px) {
+  .about-container .about-body .about-contact .about-contacts-container {
+    margin-bottom: 25px;
   }
 }
 

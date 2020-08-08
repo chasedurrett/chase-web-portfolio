@@ -61,7 +61,7 @@
     flex-wrap: wrap;
     .about-info, .about-contact{
       width: 50%;
-      height: 525px;
+      height: 545px;
       border-bottom: $blu 1px solid;
       @include break1(){
        border-bottom: none;
@@ -69,6 +69,7 @@
       @include break2(){
         width: 100%;
       }
+
     }
     .about-info{
       color: $whiteish;
@@ -83,6 +84,10 @@
         font-size: 50px;
         @include break2(){
           font-size: 30px;
+        }
+        @include vertBreak1(){
+          font-size: 30px;
+          padding-top: 20px;
         }
       }
       h4{
@@ -147,6 +152,9 @@
           padding-top: 15px;
           margin: auto;
         }
+        @include vertBreak1(){
+         display: none;
+        }
       }
       .phn-num{
         @include break2(){
@@ -166,6 +174,9 @@
           align-items: center !important;
           justify-content: space-around;
           margin: auto;
+        }
+        @include vertBreak1(){
+          margin-bottom: 25px;
         }
       }
     }
