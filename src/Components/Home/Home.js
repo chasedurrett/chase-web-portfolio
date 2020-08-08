@@ -3,35 +3,35 @@ import "./Home.css";
 import { gsap } from "gsap";
 import Button from "@material-ui/core/Button";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
+import UseAnimations from 'react-useanimations';
+import arrowDown from 'react-useanimations/lib/arrowDown'
+import {Link} from "react-scroll";
 
 const Home = () => {
   let title1 = useRef(null);
   let title2 = useRef(null);
   let title3 = useRef(null);
+  let arrow = useRef(null)
   const classes = useStyles();
 
 
   useEffect(() => {
-    gsap.from([title1, title2, title3], 1.9, {
+    gsap.from([title1, title2, title3, arrow], 1.9, {
       delay: 0.3,
       opacity: 0,
       ease: "power3.out",
       stagger: {
-        amount: 0.85,
+        amount: 1,
       },
     });
   }, [
-    title1, title2, title3
+    title1, title2, title3, arrow
   ]);
 
   return (
     <div id="home" className="home-container">
       <div
         className="hero-container"
-        style={{
-          height: 500,
-          width: 1000,
-        }}
       >
         <div className="home-titles-container" style={{ position: "absolute" }}>
           <div className="line-wrap" style={{marginTop: 20}}>
@@ -46,19 +46,32 @@ const Home = () => {
             </div>
           </div>
           <div className="line-wrap" style={{ marginTop: 20 }}>
-            <div className="line">
+            <div className="line" style={{height: 100}}>
               <h2 className="home-title-2" ref={(e) => (title2 = e)}>
                 Software Engineer.
               </h2>
             </div>
           </div>
-          <div className="line-wrap" style={{ marginTop: 150 }}>
-            <div className="line">
+          <div className="line-wrap" style={{ marginTop: 100, height: 45 }}>
+            <div className="line" style={{height: 25}}>
               <h2 className="home-title-3" ref={(e) => (title3 = e)}>
                 [and other things]
               </h2>
-            </div>
+            </div>       
           </div>
+          <div className="down-arrow" ref={(e) => (arrow = e)}>
+        <Link
+        activeClass="active"
+        to="projects"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={700}
+        >
+        <UseAnimations  animation={arrowDown} strokeColor="#BB86F3" loop={true} size={66} 
+        />
+        </Link>
+        </div>
         </div>
       </div>
     </div>

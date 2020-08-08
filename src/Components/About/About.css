@@ -246,6 +246,12 @@
           justify-content: center;
 }
 
+@media (max-height: 813px) {
+  .about-container .about-body .about-icon-container {
+    display: none;
+  }
+}
+
 @media (max-width: 1020px) {
   .about-container .about-body .about-icon-container {
     height: 40px;
@@ -286,6 +292,12 @@
   height: 10px;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
+}
+
+@media (max-height: 813px) {
+  .about-container .about-body .about-socials-container {
+    display: none;
+  }
 }
 
 .about-container .about-body .about-socials-container h6 {

@@ -12,72 +12,105 @@
   }
 }
 
+@mixin vertBreak1 {
+  @media (max-height: 813px) {
+    @content
+  }
+}
+
 .home-container {
   width: 100vw;
   height: 100vh;
   background-color: $darkMetal;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  position: relative;
-  .home-titles-container {
+ 
+  .hero-container{
     width: 1000px;
-    @include break1(){
+    margin: auto;
+    height: 600px;
+    // @include vertBreak1(){
+    //   height: 200px;
+    // }
+    .down-arrow{
+      height: 60px;
+      display: flex;
       width: 100%;
+      justify-content: center;
+      margin-top: 50px;
+      &:hover{
+        cursor: pointer;
+      }
     }
-    z-index: 2;
-    position: absolute;
-    .line-wrap {
-      overflow: hidden;
-      height: 100px;
-      .line {
-        height: 185px;
-        text-align: center;
-        .home-title-1 {
-          color: $whiteish;
-          font-family: $roboto;
-          font-size: 100px;
-          @include break1(){
-            font-size: 75px;
-          }
-          @include break3(){
-            font-size: 45px;
-          }
-          font-weight: 500;
-          margin: 2px auto;
-          .chase {
-            transition: all 600ms;
-            &:hover {
-              color: $blu;
+    .home-titles-container {
+      width: 1000px;
+      @include break1(){
+        width: 100%;
+      }
+      @include vertBreak1(){
+        height: 400px;
+        margin-top: 100px;
+      }
+      z-index: 2;
+      position: absolute;
+      .line-wrap {
+        overflow: hidden;
+        height: 100px;
+        @include vertBreak1(){
+          height: 60px;
+          margin-top: 30px !important ;
+        }
+        .line {
+          height: 185px;
+          text-align: center;
+          .home-title-1 {
+            color: $whiteish;
+            font-family: $roboto;
+            font-size: 100px;
+            @include break1(){
+              font-size: 75px;
+            }
+            @include break3(){
+              font-size: 45px;
+            }
+            font-weight: 500;
+            margin: 2px auto;
+            .chase {
+              transition: all 600ms;
+              &:hover {
+                color: $blu;
+              }
             }
           }
-        }
-        .home-title-2 {
-          font-family: $roboto;
-          color: #eeeeee80;
-          font-size: 70px;
-          @include break1(){
-            font-size: 45px;
+          .home-title-2 {
+            font-family: $roboto;
+            color: #eeeeee80;
+            font-size: 70px;
+            @include break1(){
+              font-size: 45px;
+            }
+            @include break3(){
+              font-size: 30px;
+            }
+            margin-top: 15px;
+            font-weight: 400;
           }
-          @include break3(){
-            font-size: 30px;
+          .home-title-3{
+            font-family: $roboto;
+            color: #eeeeee80;
+            font-size: 20px;
+            @include break1(){
+              font-size: 15px;
+            }
+            @include break3(){
+              font-size: 15px;
+            }
+            margin-top: 15px;
+            font-weight: 400;
           }
-          margin-top: 15px;
-          font-weight: 400;
-        }
-        .home-title-3{
-          font-family: $roboto;
-          color: #eeeeee80;
-          font-size: 20px;
-          @include break1(){
-            font-size: 15px;
-          }
-          @include break3(){
-            font-size: 15px;
-          }
-          margin-top: 15px;
-          font-weight: 400;
         }
       }
     }

@@ -8,6 +8,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -15,32 +19,67 @@
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
-  position: relative;
 }
 
-.home-container .home-titles-container {
+.home-container .hero-container {
+  width: 1000px;
+  margin: auto;
+  height: 600px;
+}
+
+.home-container .hero-container .down-arrow {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+.home-container .hero-container .down-arrow:hover {
+  cursor: pointer;
+}
+
+.home-container .hero-container .home-titles-container {
   width: 1000px;
   z-index: 2;
   position: absolute;
 }
 
 @media (max-width: 1020px) {
-  .home-container .home-titles-container {
+  .home-container .hero-container .home-titles-container {
     width: 100%;
   }
 }
 
-.home-container .home-titles-container .line-wrap {
+@media (max-height: 813px) {
+  .home-container .hero-container .home-titles-container {
+    height: 400px;
+    margin-top: 100px;
+  }
+}
+
+.home-container .hero-container .home-titles-container .line-wrap {
   overflow: hidden;
   height: 100px;
 }
 
-.home-container .home-titles-container .line-wrap .line {
+@media (max-height: 813px) {
+  .home-container .hero-container .home-titles-container .line-wrap {
+    height: 60px;
+    margin-top: 30px !important;
+  }
+}
+
+.home-container .hero-container .home-titles-container .line-wrap .line {
   height: 185px;
   text-align: center;
 }
 
-.home-container .home-titles-container .line-wrap .line .home-title-1 {
+.home-container .hero-container .home-titles-container .line-wrap .line .home-title-1 {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-size: 100px;
@@ -49,27 +88,27 @@
 }
 
 @media (max-width: 1020px) {
-  .home-container .home-titles-container .line-wrap .line .home-title-1 {
+  .home-container .hero-container .home-titles-container .line-wrap .line .home-title-1 {
     font-size: 75px;
   }
 }
 
 @media (max-width: 500px) {
-  .home-container .home-titles-container .line-wrap .line .home-title-1 {
+  .home-container .hero-container .home-titles-container .line-wrap .line .home-title-1 {
     font-size: 45px;
   }
 }
 
-.home-container .home-titles-container .line-wrap .line .home-title-1 .chase {
+.home-container .hero-container .home-titles-container .line-wrap .line .home-title-1 .chase {
   -webkit-transition: all 600ms;
   transition: all 600ms;
 }
 
-.home-container .home-titles-container .line-wrap .line .home-title-1 .chase:hover {
+.home-container .hero-container .home-titles-container .line-wrap .line .home-title-1 .chase:hover {
   color: #BB86F3;
 }
 
-.home-container .home-titles-container .line-wrap .line .home-title-2 {
+.home-container .hero-container .home-titles-container .line-wrap .line .home-title-2 {
   font-family: "Roboto", sans-serif;
   color: #eeeeee80;
   font-size: 70px;
@@ -78,18 +117,18 @@
 }
 
 @media (max-width: 1020px) {
-  .home-container .home-titles-container .line-wrap .line .home-title-2 {
+  .home-container .hero-container .home-titles-container .line-wrap .line .home-title-2 {
     font-size: 45px;
   }
 }
 
 @media (max-width: 500px) {
-  .home-container .home-titles-container .line-wrap .line .home-title-2 {
+  .home-container .hero-container .home-titles-container .line-wrap .line .home-title-2 {
     font-size: 30px;
   }
 }
 
-.home-container .home-titles-container .line-wrap .line .home-title-3 {
+.home-container .hero-container .home-titles-container .line-wrap .line .home-title-3 {
   font-family: "Roboto", sans-serif;
   color: #eeeeee80;
   font-size: 20px;
@@ -98,13 +137,13 @@
 }
 
 @media (max-width: 1020px) {
-  .home-container .home-titles-container .line-wrap .line .home-title-3 {
+  .home-container .hero-container .home-titles-container .line-wrap .line .home-title-3 {
     font-size: 15px;
   }
 }
 
 @media (max-width: 500px) {
-  .home-container .home-titles-container .line-wrap .line .home-title-3 {
+  .home-container .hero-container .home-titles-container .line-wrap .line .home-title-3 {
     font-size: 15px;
   }
 }
