@@ -22,7 +22,7 @@ const About = () => {
           <p>After graduating from the University of Oklahoma in 2018, I started work at The Practice creating commercial music for brands such as Samsung, Spotify, and L'Oreal. I decided to make a career change and recently graduated from DevMountain where I studied full-stack web development. I am currently looking for work opportunities that will challenge me and aid my growth in my new field!</p>
           <h4>Technologies I've been using:</h4>
           <ul>
-            <li>Javascript (es6)</li>
+            <li>Javascript (es6+)</li>
             <li>React</li>
             <li>Node</li>
             <li>Express</li>

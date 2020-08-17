@@ -3,96 +3,189 @@ import "./Projects.css";
 import Stems from "./stems.png";
 import Echo from "./echo.png";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import LinkIcon from '@material-ui/icons/Link';
+import LinkIcon from "@material-ui/icons/Link";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import { Link } from "@material-ui/core";
-
 
 const Projects = () => {
   const classes = useStyles();
   return (
-    <div id="projects" className="projects-container">
-      <div className="projects-body">
-        <div className="projects-body-title-container">
+    <div id='projects' className='projects-container'>
+      <div className='projects-body'>
+        <div className='projects-body-title-container'>
           <h2>Here are my recent projects</h2>
         </div>
-        <div className="project-body-one">
-          <div className="project-body-one-info">
-            <div className="project-body-one-title">Echo</div>
-            <div className="project-body-one-about">
+        <div className='project-body-one'>
+          <div className='project-body-one-info'>
+            <div className='project-body-one-title'>Echo</div>
+            <div className='project-body-one-about'>
               A web app built for users to create a profile and share content.
               Users can create posts with images and URLs, comment on other
               user's posts, and vote on their favorite content. Based on the
               popular website Reddit.
             </div>
-            <div className="project-body-one-tech">
+            <div className='project-body-one-tech'>
               React Node Express S3 Sass Material-UI
             </div>
-            <div className="project-body-one-links">
-              <a href="https://github.com/reddit-clone-wr1/Echo" target="_blank"><GitHubIcon className={classes.gitHub}/></a> <a href="echo.chasedurrett.com" target="_blank"><LinkIcon className={classes.url} /></a>
+            <div className='project-body-one-links'>
+              <div>
+                <a
+                  href='https://github.com/reddit-clone-wr1/Echo'
+                  target='_blank'
+                >
+                  <GitHubIcon className={classes.gitHub} />
+                </a>{" "}
+                <a href='https://echo-example.me' target='_blank'>
+                  <LinkIcon className={classes.url} />
+                </a>
+              </div>
+              <ul style={{ listStyle: "none", paddingLeft: 0, fontSize: 13 }}>
+                <li>username: demo</li>
+                <li>password: demo</li>
+              </ul>
             </div>
           </div>
-          <div className="project-body-image-container">
+          <div className='project-body-image-container'>
             <img
-              style={{ borderRadius: 5, boxShadow: '4px 4px 8px #101010'}}
+              style={{ borderRadius: 5, boxShadow: "4px 4px 8px #101010" }}
               src={Echo}
             />
           </div>
         </div>
-        <div className="project-body-two">
-          <div className="project-body-image-container">
+        <div className='project-body-two'>
+          <div className='project-body-image-container'>
             <img
               style={{
-                 borderRadius: 5, 
-                 boxShadow: '4px 4px 8px #101010',
-                }}
+                borderRadius: 5,
+                boxShadow: "4px 4px 8px #101010",
+              }}
               src={Stems}
             />
           </div>
-          <div className="project-body-two-info">
-            <div className="project-body-two-title">Stems</div>
-            <div className="project-body-two-about">
+          <div className='project-body-two-info'>
+            <div className='project-body-two-title'>Stems</div>
+            <div className='project-body-two-about'>
               A web app for users to upload and share the sounds they have
               created. Users can create a profile, upload their creations, and
               organize their favorite sounds across the site into "samplepacks"
               (akin to playlists).
             </div>
-            <div className="project-body-two-tech">
+            <div className='project-body-two-tech'>
               React Node Express S3 Sass
             </div>
-            <div className="project-body-two-links">
-             <a href="https://github.com/chasedurrett/stemz" target="_blank"><GitHubIcon className={classes.gitHub} /></a>   <a href="stems.chasedurrett.com" target="_blank"><LinkIcon className={classes.url}/></a> 
+            <div className='project-body-two-links'>
+              <a href='https://github.com/chasedurrett/stemz' target='_blank'>
+                <GitHubIcon className={classes.gitHub} />
+              </a>{" "}
+              <a href='https://stems.fun' target='_blank'>
+                <LinkIcon className={classes.url} />
+              </a>
+              <ul style={{ listStyle: "none", fontSize: 13 }}>
+                <li>username: demo</li>
+                <li>password: demo</li>
+              </ul>
             </div>
           </div>
         </div>
-        <div className="project-body-extras">
-          <div className="extra-projects-title-container">
+        <div className='project-body-extras'>
+          <div className='extra-projects-title-container'>
             <h2>Other projects</h2>
           </div>
-          <div className="project-thumbnails-container">
-            <div className="project-thumbnail">
-              <div className="project-thumbnail-title-container"><h2 className="project-thumbnail-title">Reddit Bot</h2></div>
-              <div className="project-thumbnail-content-container"><p>A bot created in Node.js to be the automated moderator for a subreddit I created on Reddit.</p></div>
-              <div className="project-thumbnail-tech">Node Snoowrap Snoostorm Dotenv</div>
-              <div className="project-thumbnail-links-container"><a href="https://github.com/chasedurrett/chase_reddit_bot_node.js" target="_blank"><GitHubIcon className={classes.gitHub}/></a></div>
+          <div className='project-thumbnails-container'>
+            <div className='project-thumbnail'>
+              <div className='project-thumbnail-title-container'>
+                <h2 className='project-thumbnail-title'>Reddit Bot</h2>
+              </div>
+              <div className='project-thumbnail-content-container'>
+                <p>
+                  A bot created in Node.js to be the automated moderator for a
+                  subreddit I created on Reddit.
+                </p>
+              </div>
+              <div className='project-thumbnail-tech'>
+                Node Snoowrap Snoostorm Dotenv
+              </div>
+              <div className='project-thumbnail-links-container'>
+                <a
+                  href='https://github.com/chasedurrett/chase_reddit_bot_node.js'
+                  target='_blank'
+                >
+                  <GitHubIcon className={classes.gitHub} />
+                </a>
+              </div>
             </div>
-            <div className="project-thumbnail">
-              <div className="project-thumbnail-title-container"><h2 className="project-thumbnail-title">Subscriptions</h2></div>
-              <div className="project-thumbnail-content-container"><p>An application to keep track of monthly subscriptions. Add, edit, and delete subscriptions and see your monthly total.</p></div>
-              <div className="project-thumbnail-tech">React Express Axios CSS</div>
-              <div className="project-thumbnail-links-container"><a href="https://github.com/chasedurrett/noDB-project-subscription-tracker/tree/master/subscription-tracker-app" target="_blank"><GitHubIcon className={classes.gitHub}/></a> <a href="subscriptions.chasedurrett.com" target="_blank"><LinkIcon className={classes.url}/></a></div>
+            <div className='project-thumbnail'>
+              <div className='project-thumbnail-title-container'>
+                <h2 className='project-thumbnail-title'>Subscriptions</h2>
+              </div>
+              <div className='project-thumbnail-content-container'>
+                <p>
+                  An application to keep track of monthly subscriptions. Add,
+                  edit, and delete subscriptions and see your monthly total.
+                </p>
+              </div>
+              <div className='project-thumbnail-tech'>
+                React Express Axios CSS
+              </div>
+              <div className='project-thumbnail-links-container'>
+                <a
+                  href='https://github.com/chasedurrett/noDB-project-subscription-tracker/tree/master/subscription-tracker-app'
+                  target='_blank'
+                >
+                  <GitHubIcon className={classes.gitHub} />
+                </a>{" "}
+                <a href='https://subscription-tracker.me' target='_blank'>
+                  <LinkIcon className={classes.url} />
+                </a>
+              </div>
             </div>
-            <div className="project-thumbnail">
-              <div className="project-thumbnail-title-container"><h2 className="project-thumbnail-title">J. Pastel</h2></div>
-              <div className="project-thumbnail-content-container"><p>A website I created for my band J. Pastel. An experiment with react-particles</p></div>
-              <div className="project-thumbnail-tech">React React-Particles Sass</div>
-              <div className="project-thumbnail-links-container"><a href="https://github.com/chasedurrett/j.-pastel-website" target="_blank"><GitHubIcon className={classes.gitHub}/></a> <a href="http://www.jpastel.com" target="_blank"><LinkIcon className={classes.url}/></a></div>
+            <div className='project-thumbnail'>
+              <div className='project-thumbnail-title-container'>
+                <h2 className='project-thumbnail-title'>J. Pastel</h2>
+              </div>
+              <div className='project-thumbnail-content-container'>
+                <p>
+                  A website I created for my band J. Pastel. An experiment with
+                  react-particles.
+                </p>
+              </div>
+              <div className='project-thumbnail-tech'>
+                React React-Particles Sass
+              </div>
+              <div className='project-thumbnail-links-container'>
+                <a
+                  href='https://github.com/chasedurrett/j.-pastel-website'
+                  target='_blank'
+                >
+                  <GitHubIcon className={classes.gitHub} />
+                </a>{" "}
+                <a href='http://www.jpastel.com' target='_blank'>
+                  <LinkIcon className={classes.url} />
+                </a>
+              </div>
             </div>
-            <div className="project-thumbnail">
-              <div className="project-thumbnail-title-container"><h2 className="project-thumbnail-title">Soft UI Clock</h2></div>
-              <div className="project-thumbnail-content-container"><p>A simple clock created with react-clock. An experiment with the increasingly popular Neumorphism design.</p></div>
-              <div className="project-thumbnail-tech">React React-Clock CSS</div>
-              <div className="project-thumbnail-links-container"><a href="https://github.com/chasedurrett/soft-ui-react-clock/tree/master/soft-ui-clock" target="_blank"><GitHubIcon className={classes.gitHub}/></a> <a href="softuiclock.chasedurrett.com" target="_blank"><LinkIcon className={classes.url}/></a></div>
+            <div className='project-thumbnail'>
+              <div className='project-thumbnail-title-container'>
+                <h2 className='project-thumbnail-title'>Soft UI Clock</h2>
+              </div>
+              <div className='project-thumbnail-content-container'>
+                <p>
+                  A simple clock created with react-clock. An experiment with
+                  the increasingly popular Neumorphism design.
+                </p>
+              </div>
+              <div className='project-thumbnail-tech'>
+                React React-Clock CSS
+              </div>
+              <div className='project-thumbnail-links-container'>
+                <a
+                  href='https://github.com/chasedurrett/soft-ui-react-clock/tree/master/soft-ui-clock'
+                  target='_blank'
+                >
+                  <GitHubIcon className={classes.gitHub} />
+                </a>{" "}
+               
+              </div>
             </div>
           </div>
         </div>
@@ -177,5 +270,5 @@ const useStyles = makeStyles((theme) => ({
       color: "#BB86F3",
       cursor: "pointer",
     },
-  }
+  },
 }));
